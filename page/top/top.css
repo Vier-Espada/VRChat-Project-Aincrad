@@ -1,5 +1,5 @@
 /* =========================
-   THEME VARIABLES
+   THEME
 ========================= */
 
 :root{
@@ -11,8 +11,6 @@
   --border:rgba(255,255,255,0.1);
 
 }
-
-/* ===== LIGHT MODE ===== */
 
 body.light{
 
@@ -56,7 +54,7 @@ body{
 
 }
 
-/* ===== SLIDER ===== */
+/* SLIDER */
 
 .hero-slider{
 
@@ -80,7 +78,7 @@ body{
 
 }
 
-/* ===== DARK OVERLAY ===== */
+/* DARK OVERLAY */
 
 .hero::after{
 
@@ -142,19 +140,23 @@ body.light .hero::after{
 
   letter-spacing:4px;
 
-  text-shadow:0 0 28px rgba(120,180,255,0.8);
+  text-shadow:
+    0 0 18px rgba(255,255,255,0.9),
+    0 0 40px rgba(255,255,255,0.4);
 
 }
 
 .hero-subtitle{
 
-  font-size:20px;
+  font-size:26px;
 
   margin-top:12px;
 
   color:var(--text);
 
-  opacity:0.8;
+  opacity:0.85;
+
+  letter-spacing:1px;
 
 }
 
@@ -182,7 +184,7 @@ body.light .hero::after{
 
 }
 
-/* ===== CARD ===== */
+/* CARD */
 
 .social-card{
 
@@ -208,7 +210,7 @@ body.light .hero::after{
 
 }
 
-/* ===== HOVER ===== */
+/* HOVER */
 
 .social-card:hover{
 
@@ -220,9 +222,7 @@ body.light .hero::after{
 
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 
 @media (max-width: 768px){
 
@@ -232,9 +232,7 @@ body.light .hero::after{
 
 }
 
-/* =========================
-   SLIDER ANIMATION
-========================= */
+/* SLIDE */
 
 @keyframes slide{
 
