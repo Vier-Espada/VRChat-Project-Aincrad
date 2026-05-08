@@ -300,3 +300,12 @@ body.light .hero::after{
   100%{ transform:translateX(0); }
 
 }
+.important{
+
+  color:#ff4d4d;
+
+  font-weight:bold;
+
+  text-shadow:0 0 8px rgba(255,0,0,0.4);
+
+}
