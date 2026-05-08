@@ -205,7 +205,7 @@ body.light .hero::after{
 }
 
 /* =========================
-   UNDERLINE
+   STRONG UNDERLINE
 ========================= */
 
 .social-title::after{
@@ -214,17 +214,19 @@ body.light .hero::after{
 
   display:block;
 
-  width:220px; /* ← 長くした */
+  width:320px;   /* ← かなり長くした */
 
-  height:2px;
+  height:3px;    /* ← 太くした */
 
-  margin:10px auto 0;
+  margin:12px auto 0;
 
-  background:var(--text); /* ← 白 / 黒 自動切替 */
+  background:var(--text);
 
-  opacity:0.6;
+  opacity:0.9;   /* ← くっきり */
 
-  border-radius:2px;
+  border-radius:3px;
+
+  box-shadow:0 0 10px rgba(120,180,255,0.25); /* ← 少し発光 */
 
 }
 
@@ -300,6 +302,11 @@ body.light .hero::after{
   100%{ transform:translateX(0); }
 
 }
+
+/* =========================
+   TEXT STYLES
+========================= */
+
 .important{
 
   color:#ff4d4d;
@@ -309,24 +316,9 @@ body.light .hero::after{
   text-shadow:0 0 8px rgba(255,0,0,0.4);
 
 }
+
 .underline{
+
   text-decoration: underline;
-}
-.info-line{
-
-  width:100%;
-
-  height:1px;
-
-  margin:30px 0;
-
-  background:linear-gradient(
-    to right,
-    transparent,
-    var(--text),
-    transparent
-  );
-
-  opacity:0.3;
 
 }
