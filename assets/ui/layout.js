@@ -50,12 +50,6 @@ navbar.innerHTML = `
 
 <div class="topbar-right">
 
-  <input
-    type="text"
-    id="search-bar"
-    placeholder="検索..."
-  >
-
   <button id="theme-toggle">
     🌙
   </button>
@@ -138,38 +132,6 @@ window.addEventListener(
 
   }
 );
-
-/* ===== SEARCH ===== */
-
-const searchBar =
-  document.getElementById("search-bar");
-
-searchBar.addEventListener("input",()=>{
-
-  const value =
-    searchBar.value.toLowerCase();
-
-  const searchable =
-    document.querySelectorAll("[data-search]");
-
-  searchable.forEach(item=>{
-
-    const text =
-      item.dataset.search.toLowerCase();
-
-    if(text.includes(value)){
-
-      item.style.display = "";
-
-    }else{
-
-      item.style.display = "none";
-
-    }
-
-  });
-
-});
 
 /* ===== LUCIDE ===== */
 
