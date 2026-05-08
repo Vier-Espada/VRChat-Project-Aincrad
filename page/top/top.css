@@ -1,5 +1,206 @@
-h1{
+/* ===== HERO ===== */
 
-  font-size:42px;
+.hero{
+
+  position:relative;
+
+  width:100%;
+  height:720px;
+
+  overflow:hidden;
+
+  border-radius:0 0 24px 24px;
+
+}
+
+/* ===== SLIDER ===== */
+
+.hero-slider{
+
+  display:flex;
+
+  width:300%;
+  height:100%;
+
+  animation:
+    slide 18s infinite;
+
+}
+
+.hero-slider img{
+
+  width:100vw;
+  height:100%;
+
+  object-fit:cover;
+
+  flex-shrink:0;
+
+}
+
+/* ===== OVERLAY ===== */
+
+.hero::after{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.35),
+      rgba(0,0,0,0.68)
+    );
+
+}
+
+/* ===== CENTER ===== */
+
+.hero-overlay{
+
+  position:absolute;
+
+  inset:0;
+
+  z-index:2;
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+  justify-content:center;
+
+  text-align:center;
+
+  padding:20px;
+
+}
+
+/* ===== TITLE ===== */
+
+.hero-title{
+
+  font-size:82px;
+
+  margin:0;
+
+  letter-spacing:4px;
+
+  color:white;
+
+  text-shadow:
+    0 0 28px rgba(120,180,255,0.8);
+
+}
+
+/* ===== SUBTITLE ===== */
+
+.hero-subtitle{
+
+  font-size:20px;
+
+  margin-top:16px;
+
+  color:rgba(255,255,255,0.82);
+
+}
+
+/* ===== SOCIAL ===== */
+
+.social-row{
+
+  display:flex;
+
+  gap:16px;
+
+  flex-wrap:wrap;
+
+  justify-content:center;
+
+  margin-top:42px;
+
+}
+
+/* ===== BUTTON ===== */
+
+.social-button{
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  min-width:170px;
+  height:54px;
+
+  padding:0 22px;
+
+  border-radius:14px;
+
+  text-decoration:none;
+
+  color:white;
+
+  background:
+    rgba(255,255,255,0.06);
+
+  border:
+    1px solid rgba(255,255,255,0.1);
+
+  backdrop-filter:blur(10px);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border 0.25s ease;
+
+}
+
+.social-button:hover{
+
+  transform:translateY(-4px);
+
+  border:
+    1px solid rgba(120,180,255,0.45);
+
+  box-shadow:
+    0 0 22px rgba(120,180,255,0.28);
+
+}
+
+/* ===== AUTO SLIDE ===== */
+
+@keyframes slide{
+
+  0%{
+    transform:translateX(0);
+  }
+
+  30%{
+    transform:translateX(0);
+  }
+
+  35%{
+    transform:translateX(-100vw);
+  }
+
+  65%{
+    transform:translateX(-100vw);
+  }
+
+  70%{
+    transform:translateX(-200vw);
+  }
+
+  95%{
+    transform:translateX(-200vw);
+  }
+
+  100%{
+    transform:translateX(0);
+  }
 
 }
