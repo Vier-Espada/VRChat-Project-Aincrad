@@ -7,8 +7,16 @@
     "buy":"50",
     "sell":"25",
     "type":"Blunt",
-    "tags":["片手剣","初期装備"],
-    "link":"detail/Wooden-Sword.html"
+    "link":"detail/Wooden-Sword.html",
+    "categories":{
+
+    "武器種":"片手剣",
+
+    "レベル":"0",
+
+    "攻撃方法":"Blunt",
+
+    "入手":"ショップ","宝箱","初期装備"
   },
 
   {
