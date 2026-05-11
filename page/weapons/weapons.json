@@ -7,7 +7,7 @@
     "buy":"50",
     "sell":"25",
     "type":"Blunt",
-    "link":"detail/Wooden-Sword.html",
+    "link":"detail/Wooden Sword.html",
 
     "categories":{
 
@@ -32,7 +32,7 @@
     "buy":"420",
     "sell":"210",
     "type":"Slash",
-    "link":"detail/Bronze-Sword.html",
+    "link":"detail/Bronze Sword.html",
 
     "categories":{
 
@@ -57,11 +57,11 @@
     "buy":"420",
     "sell":"210",
     "type":"Pierce",
-    "link":"detail/Bronze-Rapier.html",
+    "link":"detail/Bronze Rapier.html",
 
     "categories":{
 
-      "武器種":"レイピア",
+      "武器種":"細剣",
       "レベル":"1Lv",
       "攻撃方法":"Pierce",
 
@@ -82,7 +82,7 @@
     "buy":"420",
     "sell":"210",
     "type":"Pierce",
-    "link":"detail/Bronze-Dagger.html",
+    "link":"detail/Bronze Dagger.html",
 
     "categories":{
 
@@ -102,7 +102,7 @@
     "buy":"420",
     "sell":"210",
     "type":"Slash",
-    "link":"detail/Bronze-Axe.html",
+    "link":"detail/Bronze Axe.html",
 
     "categories":{
 
@@ -122,7 +122,7 @@
     "buy":"420",
     "sell":"210",
     "type":"Slash",
-    "link":"detail/Bronze-Greatsword.html",
+    "link":"detail/Bronze Greatsword.html",
 
     "categories":{
 
@@ -144,7 +144,7 @@
     "buy":"420",
     "sell":"210",
     "type":"Slash",
-    "link":"detail/Bronze-Greataxe.html",
+    "link":"detail/Bronze Greataxe.html",
 
     "categories":{
 
@@ -166,7 +166,7 @@
     "buy":"420",
     "sell":"210",
     "type":"Pierce",
-    "link":"detail/Bronze-Spear.html",
+    "link":"detail/Bronze Spear.html",
 
     "categories":{
 
@@ -190,7 +190,7 @@
     "buy":"420",
     "sell":"210",
     "type":"Blunt",
-    "link":"detail/Bronze-Mace.html",
+    "link":"detail/Bronze Mace.html",
 
     "categories":{
 
@@ -212,7 +212,7 @@
     "buy":"420",
     "sell":"210",
     "type":"Blunt",
-    "link":"detail/Bronze-Maul.html",
+    "link":"detail/Bronze Maul.html",
 
     "categories":{
 
@@ -263,6 +263,160 @@
       "武器種":"片手戦斧",
       "レベル":"2Lv",
       "攻撃方法":"Slash",
+
+      "入手":"ショップ"
+      
+
+    }
+  },
+
+  {
+    "name":"Stacked Rapier",
+    "image":"weaponpng/Stacked Rapier.png",
+    "level":"2",
+    "attack":"22.09-35.69",
+    "buy":"950",
+    "sell":"475",
+    "type":"Pierce",
+    "link":"detail/Stacked Rapier.html",
+
+    "categories":{
+
+      "武器種":"細剣",
+      "レベル":"2Lv",
+      "攻撃方法":"Pierce",
+
+      "入手":"ショップ"
+      
+
+    }
+  },
+
+  {
+    "name":"Ground Gorge",
+    "image":"weaponpng/Ground Gorge.png",
+    "level":"5",
+    "attack":"32.5-50",
+    "buy":"2100",
+    "sell":"1050",
+    "type":"Slash",
+    "link":"detail/Ground Gorge.html",
+
+    "categories":{
+
+      "武器種":"片手戦斧",
+      "レベル":"5Lv",
+      "攻撃方法":"Slash",
+
+      "入手":"ショップ"
+      
+
+    }
+  },
+
+  {
+    "name":"Dragon Slayer",
+    "image":"weaponpng/Dragon Slayer.png",
+    "level":"8",
+    "attack":"40.94-63",
+    "buy":"13000",
+    "sell":"6500",
+    "type":"Slash",
+    "link":"detail/Dragon Slayer.html",
+
+    "categories":{
+
+      "武器種":"両手剣",
+      "レベル":"8Lv",
+      "攻撃方法":"Slash",
+
+      "入手":"ショップ"
+      
+
+    }
+  },
+
+  {
+    "name":"Ritual Dagger",
+    "image":"weaponpng/Ritual Dagger.png",
+    "level":"8",
+    "attack":"40.94-63",
+    "buy":"8800",
+    "sell":"4400",
+    "type":"Pierce",
+    "link":"detail/Ritual Dagger.html",
+
+    "categories":{
+
+      "武器種":"短剣",
+      "レベル":"8Lv",
+      "攻撃方法":"Pierce",
+
+      "入手":"ショップ"
+      
+
+    }
+  },
+
+  {
+    "name":"Linalia Hammer",
+    "image":"weaponpng/Linalia Hammer.png",
+    "level":"8",
+    "attack":"43.4-66.78",
+    "buy":"13000",
+    "sell":"6500",
+    "type":"Blunt",
+    "link":"detail/Linalia Hammer.html",
+
+    "categories":{
+
+      "武器種":"両手戦槌",
+      "レベル":"8Lv",
+      "攻撃方法":"Blunt",
+
+      "入手":"ショップ"
+      
+
+    }
+  },
+
+  {
+    "name":"Queens Knightsword",
+    "image":"weaponpng/Queens Knightsword.png",
+    "level":"8",
+    "attack":"40.94-63",
+    "buy":"11000",
+    "sell":"5500",
+    "type":"Slash",
+    "link":"detail/Queens Knightsword.html",
+
+    "categories":{
+
+      "武器種":"片手長剣",
+      "レベル":"8Lv",
+      "攻撃方法":"Slash",
+
+      "入手":"ショップ"
+      
+
+    }
+  },
+
+  {
+    "name":"Forged Rapier",
+    "image":"weaponpng/Forged Rapier.png",
+    "level":"8",
+    "attack":"40.94-66.14",
+    "buy":"12500",
+    "sell":"6250",
+    "type":"Pierce",
+    "link":"detail/Forged Rapier.html",
+
+    "categories":{
+
+      "武器種":"細剣",
+      "レベル":"8Lv",
+      "攻撃方法":"Pierce",
 
       "入手":"ショップ"
       
