@@ -598,6 +598,137 @@
       
 
     }
-  }
+  },
+
+  {
+    "name":"Deadwood",
+    "image":"weaponpng/Deadwood.png",
+    "level":"5",
+    "attack":"32.5-50",
+    "buy":"1200",
+    "sell":"600",
+    "type":"Blunt",
+    "link":"detail/Deadwood.html",
+
+    "categories":{
+
+      "武器種":"War Hammer",
+      "レベル":"5Lv",
+      "攻撃方法":"Blunt",
+
+      "入手":"ショップ"
+      
+
+    }
+  },
+
+  {
+    "name":"Unholy Blight",
+    "image":"weaponpng/Unholy Blight.png",
+    "level":"5",
+    "attack":"32.5-50",
+    "buy":"1900",
+    "sell":"950",
+    "type":"Slash",
+    "link":"detail/Unholy Blight.html",
+
+    "categories":{
+
+      "武器種":"Great Axe",
+      "レベル":"5Lv",
+      "攻撃方法":"Slash",
+
+      "入手":"ショップ"
+      
+
+    }
+  },
+
+  {
+    "name":"Chivalry Rapier",
+    "image":"weaponpng/Chivalry Rapier.png",
+    "level":"5",
+    "attack":"32.5-52.49",
+    "buy":"1800",
+    "sell":"900",
+    "type":"Pierce",
+    "link":"detail/Ground Pierce.html",
+
+    "categories":{
+
+      "武器種":"Chivalry Rapier",
+      "レベル":"5Lv",
+      "攻撃方法":"Pierce",
+
+      "入手":"ショップ"
+      
+
+    }
+  },
+
+  {
+    "name":"Bloodlord Sculpter",
+    "image":"weaponpng/Bloodlord Sculpter.png",
+    "level":"5",
+    "attack":"32.5-50",
+    "buy":"2500",
+    "sell":"1250",
+    "type":"Slash",
+    "link":"detail/Bloodlord Sculpter.html",
+
+    "categories":{
+
+      "武器種":"Great Sword",
+      "レベル":"5Lv",
+      "攻撃方法":"Slash",
+
+      "入手":"ショップ"
+      
+
+    }
+  },
+
+  {
+    "name":"Caravan Spear",
+    "image":"weaponpng/Caravan Spear.png",
+    "level":"5",
+    "attack":"32.5-50",
+    "buy":"1950",
+    "sell":"975",
+    "type":"Pierce",
+    "link":"detail/Caravan Spear.html",
+
+    "categories":{
+
+      "武器種":"Spear",
+      "レベル":"5Lv",
+      "攻撃方法":"Pierce",
+
+      "入手":"ショップ"
+      
+
+    }
+  },
+
+  {
+    "name":"Excalibur Replica",
+    "image":"weaponpng/Excalibur Replica.png",
+    "level":"5",
+    "attack":"32.5-50",
+    "buy":"8000",
+    "sell":"4000",
+    "type":"Slash",
+    "link":"detail/Excalibur Replica.html",
+
+    "categories":{
+
+      "武器種":"Long Sword",
+      "レベル":"5Lv",
+      "攻撃方法":"Slash",
+
+      "入手":"ショップ"
+      
+
+    }
   
 ]
