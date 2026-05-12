@@ -1,7 +1,7 @@
 let quests = [];
 let selectedTag = null;
 
-fetch("quests.json")
+fetch("quest.json")
   .then(res => res.json())
   .then(data => {
     quests = data;
