@@ -45,7 +45,7 @@ navbar.innerHTML = `
     </a>
 
     <a href="../help/help.html">
-    <i data-lucide="circle-help"></i>
+    <i data-lucide="circle-question-mark"></i>
     ヘルプ
     </a>
 
