@@ -39,7 +39,7 @@ navbar.innerHTML = `
       モンスター
     </a>
 
-    <a href="../quest/items.html">
+    <a href="../quest/quest.html">
       <i data-lucide="file-text"></i>
       クエスト
     </a>
