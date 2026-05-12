@@ -66,3 +66,35 @@ input {
   font-size: 12px;
   color: #aaa;
 }
+/* ===== スマホ対応 ===== */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .quest {
+    flex-direction: column;
+  }
+
+  .quest img {
+    width: 100%;
+    height: 160px;
+  }
+
+  .quest-content {
+    padding: 10px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  .tag {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
