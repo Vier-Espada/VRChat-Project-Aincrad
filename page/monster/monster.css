@@ -12,6 +12,9 @@
 
 }
 
+/* ダークモード対応 */
+
+html.dark,
 body.dark{
 
   --bg:#0f0f0f;
@@ -26,6 +29,9 @@ body.dark{
 
 }
 
+/* 全体 */
+
+html,
 body{
 
   background:var(--bg);
@@ -33,11 +39,15 @@ body{
 
 }
 
+/* ページ */
+
 .monster-page{
 
   padding:40px;
 
 }
+
+/* タイトル */
 
 .page-title{
 
@@ -47,6 +57,8 @@ body{
   color:var(--text);
 
 }
+
+/* 検索 */
 
 .search-box{
 
@@ -75,6 +87,8 @@ body{
   color:gray;
 
 }
+
+/* タグ */
 
 .tag-section{
 
@@ -134,6 +148,8 @@ body{
 
 }
 
+/* モンスター一覧 */
+
 .monster-grid{
 
   display:grid;
@@ -146,6 +162,8 @@ body{
   margin-top:40px;
 
 }
+
+/* カード */
 
 .monster-card{
 
@@ -171,6 +189,8 @@ body{
 
 }
 
+/* 画像 */
+
 .monster-image{
 
   width:100%;
@@ -180,11 +200,15 @@ body{
 
 }
 
+/* 内容 */
+
 .monster-content{
 
   padding:22px;
 
 }
+
+/* 名前 */
 
 .monster-name{
 
@@ -196,6 +220,8 @@ body{
 
 }
 
+/* ステータス */
+
 .monster-stat{
 
   margin-bottom:8px;
@@ -205,6 +231,8 @@ body{
   color:var(--text);
 
 }
+
+/* ドロップタイトル */
 
 .drop-title{
 
@@ -217,6 +245,8 @@ body{
 
 }
 
+/* ドロップ一覧 */
+
 .drop-list{
 
   display:flex;
@@ -226,6 +256,8 @@ body{
   gap:10px;
 
 }
+
+/* ドロップアイテム */
 
 .drop-item{
 
@@ -242,6 +274,8 @@ body{
   font-size:14px;
 
 }
+
+/* スマホ */
 
 @media(max-width:700px){
 
