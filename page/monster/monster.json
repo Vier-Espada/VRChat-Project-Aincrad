@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Frenzy Boar",
+    "image": "./monsterpng/Frenzy Boar.png",
+    "col": 20,
+    "exp": 50,
+    "drops": ["Metal Scraps", "Quartanier"],
+    "tags": ["初心者", "Boar","1階層"],
+    "link": "./detail/Frenzy Boar.html"
+  },
+
+  {
+    "name": "Wasp",
+    "image": "./monsterpng/Wasp.png",
+    "col": 35,
+    "exp": 60,
+    "drops": ["Metal Scraps", "Vespid Rapier"],
+    "tags": ["中級者", "Wasp","1階層"],
+    "link": "./detail/Wasp.html"
+  }
+]
