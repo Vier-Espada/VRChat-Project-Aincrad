@@ -29,7 +29,7 @@ navbar.innerHTML = `
       武器
     </a>
 
-    <a href="../items/items.html">
+    <a href="../item/item.html">
       <i data-lucide="backpack"></i>
       アイテム
     </a>
