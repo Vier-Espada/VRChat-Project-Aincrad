@@ -19,6 +19,11 @@ navbar.innerHTML = `
       トップページ
     </a>
 
+    <a href="../kihon/kihon.html">
+      <i data-lucide="book-type"></i>
+      基本操作
+    </a>
+
     <a href="../map/map.html">
       <i data-lucide="map"></i>
       マップ
