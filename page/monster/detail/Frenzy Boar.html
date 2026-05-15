@@ -16,40 +16,89 @@
 
 <div class="page-content">
 
-  <section class="monster-detail">
+<section class="monster-detail-top">
 
-    <img
-      src="../monsterpng/boar.png"
-      class="detail-image"
-      alt="Frenzy Boar"
-    >
+<div class="monster-left">
 
-    <div class="detail-content">
+<h1>Frenzy Boar</h1>
 
-      <h1>Frenzy Boar</h1>
+<img
+src="../monsterpng/boar.png"
+class="detail-image"
+alt="Frenzy Boar"
+>
 
-      <div class="detail-stat">
-        Col : 20
-      </div>
+</div>
 
-      <div class="detail-stat">
-        EXP : 50
-      </div>
+<div class="monster-right">
 
-      <h2>アイテムドロップ</h2>
+<div class="detail-stat">Col : 20</div>
+<div class="detail-stat">EXP : 50</div>
 
-      <div class="drop-list">
-        <div class="drop-item">Metal Scraps</div>
-        <div class="drop-item">Quartanier</div>
-      </div>
+<h2>ドロップ</h2>
 
-    </div>
+<div class="drop-list">
+<div class="drop-item">Metal Scraps</div>
+<div class="drop-item">Quartanier</div>
+</div>
 
-  </section>
+</div>
+
+</section>
+
+<!-- MAP -->
+
+<section class="detail-section">
+
+<h2>出現場所</h2>
+
+<div class="switch-layout">
+
+<div class="switch-buttons" id="mapButtons"></div>
+
+<div class="switch-view">
+
+<img
+id="mapImage"
+src="../detail/map/Frenzy boar/Frenzy Boar_floor1.png"
+>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ATTACK -->
+
+<section class="detail-section">
+
+<h2>攻撃方法</h2>
+
+<div class="switch-layout">
+
+<div class="switch-buttons" id="attackButtons"></div>
+
+<div class="switch-view">
+
+<video
+id="attackVideo"
+controls
+width="100%"
+></video>
+
+<p id="attackDesc"></p>
+
+</div>
+
+</div>
+
+</section>
 
 </div>
 
 <script src="../../../assets/ui/layout.js"></script>
+<script src="detail.js"></script>
 
 <script>
 lucide.createIcons();
