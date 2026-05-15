@@ -33,30 +33,30 @@
   "attacks": [
     {
       "id": "charge1",
-      "title": "突進 - 1",
+      "title": "突進-1",
       "video": "../attackvideo/Frenzy Boar/Frenzy Boar_attack1.mp4",
-      "description": "前方へ一直線に高速突進する基本攻撃。横回避推奨。"
+      "description": "前方へ突進攻撃。横回避推奨。"
     },
 
     {
       "id": "charge2",
-      "title": "突進 - 2",
+      "title": "突進-2",
       "video": "../attackvideo/Frenzy Boar/Frenzy Boar_attack2.mp4",
-      "description": "短い溜めのあと素早く突進。距離を取ると発動しやすい。"
+      "description": "短い溜めのあと素早く突進。横回避推奨。"
     },
 
     {
       "id": "charge3",
-      "title": "突進 - 3",
+      "title": "突進-3",
       "video": "../attackvideo/Frenzy Boar/Frenzy Boar_attack3.mp4",
-      "description": "プレイヤーが離れていると狙ってくる長距離突進。"
+      "description": "プレイヤーが離れると突進してくる。横回避推奨。"
     },
 
     {
       "id": "retreatCharge",
       "title": "後退 → 突進",
       "video": "../attackvideo/Frenzy Boar/Frenzy Boar_attack4.mp4",
-      "description": "一度後ろへ下がり、勢いをつけて強力な突進を行う。予備動作が長いので回避しやすい。"
+      "description": "一度後ろへ下がり,突進してくる。横回避推奨"
     }
   ],
 
