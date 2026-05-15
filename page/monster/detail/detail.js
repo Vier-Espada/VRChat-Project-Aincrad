@@ -1,5 +1,10 @@
-const params = new URLSearchParams(location.search);
-const monster = params.get("name");
+const params=
+new URLSearchParams(
+location.search
+);
+
+const monster=
+params.get("name");
 
 fetch(`attack/${monster}.json`)
 .then(res=>res.json())
@@ -7,32 +12,42 @@ fetch(`attack/${monster}.json`)
 
 function renderMonster(data){
 
-const root =
-document.getElementById("monster-detail");
+const root=
+document.getElementById(
+"monster-detail"
+);
 
 root.innerHTML=`
 
 <div class="top-section">
 
-  <div class="left">
+<div>
 
-    <h1>${data.name}</h1>
+<h1>${data.name}</h1>
 
-    <img src="${data.image}" class="detail-image">
+<img
+src="${data.image}"
+class="detail-image"
+>
 
-  </div>
+</div>
 
-  <div class="right">
+<div>
 
-    <div>Col : ${data.col}</div>
-    <div>EXP : ${data.exp}</div>
+<div>Col : ${data.col}</div>
+<div>EXP : ${data.exp}</div>
 
-    <h2>ドロップ</h2>
-    <div class="drop-list">
-      ${data.drops.map(d=>`<div class="drop-item">${d}</div>`).join("")}
-    </div>
+<h2>ドロップ</h2>
 
-  </div>
+<div class="drop-list">
+
+${data.drops.map(d=>
+`<div class="drop-item">${d}</div>`
+).join("")}
+
+</div>
+
+</div>
 
 </div>
 
@@ -40,45 +55,75 @@ root.innerHTML=`
 
 <div class="map-wrap">
 
-  <div class="map-tabs">
-    ${data.maps.map((m,i)=>
-      `<button onclick="switchMap('${m.image}')">${m.label}</button>`
-    ).join("")}
-  </div>
+<div class="map-tabs">
 
-  <img id="mapImage" src="${data.maps[0].image}" class="map-image">
+${data.maps.map(m=>
+`<button onclick="switchMap('${m.image}')">${m.label}</button>`
+).join("")}
+
+</div>
+
+<img
+id="mapImage"
+src="${data.maps[0].image}"
+class="map-image"
+>
 
 </div>
 
 <h2>攻撃方法</h2>
 
-<div class="attack-tabs">
-${data.attacks.map(a=>
-`<button onclick='showAttack(${JSON.stringify(JSON.stringify(a))})'>
+<div class="attack-list">
+
+${data.attacks.map((a,i)=>`
+
+<div class="attack-item">
+
+<button
+class="attack-toggle"
+onclick="toggleAttack(${i})"
+>
 ➤ ${a.name}
-</button>`
-).join("")}
-</div>
+</button>
 
-<div id="attackBox"></div>
-`;
+<div
+class="attack-content"
+id="attack-${i}"
+>
 
-showAttack(JSON.stringify(data.attacks[0]));
-}
-
-function switchMap(src){
-document.getElementById("mapImage").src=src;
-}
-
-function showAttack(raw){
-
-const a=JSON.parse(raw);
-
-document.getElementById("attackBox").innerHTML=`
 <video controls class="attack-video">
 <source src="${a.video}">
 </video>
 
 <p>${a.desc}</p>
+
+</div>
+
+</div>
+
+`).join("")}
+
+</div>
 `;
+
+}
+
+function switchMap(src){
+
+document.getElementById(
+"mapImage"
+).src=src;
+
+}
+
+function toggleAttack(i){
+
+document
+.getElementById(
+`attack-${i}`
+)
+.classList.toggle(
+"open"
+);
+
 }
