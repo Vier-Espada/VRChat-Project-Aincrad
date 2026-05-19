@@ -67,5 +67,71 @@
         "ショップ"
       ]
     }
+  },
+  {
+    "name":"Hand Mirror",
+    "image":"itempng/Hand Mirror.png",
+    "type":"道具",
+    "buy":"250",
+    "sell":"125",
+    "obtain":"初期所持,ショップ,宝箱",
+    "link":"itemdetail/Hand Mirror.html",
+
+    "categories":{
+      "種類":"道具",
+      "入手":[
+        "初期所持",
+        "ショップ",
+        "宝箱"
+      ]
+    }
+  },
+  {
+    "name":"Green Herb",
+    "image":"itempng/Green Herb.png",
+    "type":"採取品",
+    "buy":"(採取)0",
+    "sell":"5",
+    "obtain":"採取",
+    "link":"itemdetail/Green Herb.html",
+
+    "categories":{
+      "種類":"採取品",
+      "入手":[
+        "採取"
+      ]
+    }
+  },
+  {
+    "name":"Red Herb",
+    "image":"itempng/Red Herb.png",
+    "type":"採取品",
+    "buy":"(採取)0",
+    "sell":"5",
+    "obtain":"採取",
+    "link":"itemdetail/Red Herb.html",
+
+    "categories":{
+      "種類":"採取品",
+      "入手":[
+        "採取"
+      ]
+    }
+  },
+  {
+    "name":"Pink Herb",
+    "image":"itempng/Pink Herb.png",
+    "type":"採取品",
+    "buy":"(採取)0",
+    "sell":"5",
+    "obtain":"採取",
+    "link":"itemdetail/Pink Herb.html",
+
+    "categories":{
+      "種類":"採取品",
+      "入手":[
+        "採取"
+      ]
+    }
   }
 ]
