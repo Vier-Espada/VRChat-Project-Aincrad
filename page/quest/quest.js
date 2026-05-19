@@ -1,5 +1,5 @@
 let quests = [];
-let selectedTag = null;
+let selectedTags = {};
 
 fetch("quest.json")
   .then(res => res.json())
@@ -12,30 +12,51 @@ fetch("quest.json")
 // タグ生成
 function renderTags() {
   const tagBox = document.getElementById("tags");
+  tagBox.innerHTML = "";
 
-  const tags = [...new Set(quests.flatMap(q => q.tags))];
+  const categories = {};
 
-  tags.forEach(tag => {
-    const el = document.createElement("span");
-    el.className = "tag";
-    el.innerText = tag;
+  quests.forEach(q => {
+    for (const category in q.tags) {
+      if (!categories[category]) categories[category] = new Set();
 
-    el.onclick = () => {
-      selectedTag = selectedTag === tag ? null : tag;
-
-      document.querySelectorAll(".tag").forEach(t => {
-        t.classList.remove("active");
+      q.tags[category].forEach(tag => {
+        categories[category].add(tag);
       });
-
-      if (selectedTag === tag) {
-        el.classList.add("active");
-      }
-
-      renderQuests();
-    };
-
-    tagBox.appendChild(el);
+    }
   });
+
+  for (const category in categories) {
+    const group = document.createElement("div");
+    group.className = "tag-group";
+
+    group.innerHTML = `<h3>${category}</h3>`;
+
+    categories[category].forEach(tag => {
+      const el = document.createElement("span");
+      el.className = "tag";
+      el.innerText = tag;
+
+      el.onclick = () => {
+        if (!selectedTags[category]) selectedTags[category] = [];
+
+        if (selectedTags[category].includes(tag)) {
+          selectedTags[category] =
+            selectedTags[category].filter(t => t !== tag);
+          el.classList.remove("active");
+        } else {
+          selectedTags[category].push(tag);
+          el.classList.add("active");
+        }
+
+        renderQuests();
+      };
+
+      group.appendChild(el);
+    });
+
+    tagBox.appendChild(group);
+  }
 }
 
 // クエスト描画
@@ -47,9 +68,18 @@ function renderQuests() {
 
   quests
     .filter(q => {
-      const matchName = q.name.toLowerCase().includes(search);
-      const matchTag = selectedTag ? q.tags.includes(selectedTag) : true;
-      return matchName && matchTag;
+      const matchName =
+        q.name.toLowerCase().includes(search);
+
+      const matchTags = Object.keys(selectedTags).every(category => {
+        if (!selectedTags[category].length) return true;
+
+        return selectedTags[category].some(tag =>
+          q.tags[category]?.includes(tag)
+        );
+      });
+
+      return matchName && matchTags;
     })
     .forEach(q => {
       const div = document.createElement("div");
@@ -60,12 +90,14 @@ function renderQuests() {
         <div class="quest-content">
           <h3>${q.name}</h3>
           <div class="stats">
-             Col: ${q.col} | EXP: ${q.exp} | GuildEXP: ${q.guildExp} | ⏱ ${q.timeLimit}
+            Col: ${q.col} |
+            EXP: ${q.exp} |
+            GuildEXP: ${q.guildExp} |
+            ⏱ ${q.timeLimit}
           </div>
         </div>
       `;
 
-      // クリックで別HTMLへ
       div.onclick = () => {
         window.location.href = q.page;
       };
@@ -76,7 +108,5 @@ function renderQuests() {
 
 // 検索
 document.addEventListener("input", e => {
-  if (e.target.id === "search") {
-    renderQuests();
-  }
+  if (e.target.id === "search") renderQuests();
 });
