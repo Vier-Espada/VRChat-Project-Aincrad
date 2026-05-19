@@ -28,5 +28,20 @@
     "exp": 450,
     "guildExp": 10,
     "timeLimit": "無制限"
+  },
+  {
+    "name": "Stella's Request",
+    "page": "questlist/Stella's Request.html",
+    "tags": {
+      "エリア": ["1階層"],
+      "受注場所": ["Town of Beginnings"],
+      "推奨レベル": ["3Lv"],
+      "種類": ["討伐"]
+    },
+    "image": "../../assets/quest/Stella's Request.png",
+    "col": 300,
+    "exp": 100,
+    "guildExp": 10,
+    "timeLimit": "無制限"
   }
 ]
