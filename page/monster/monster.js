@@ -32,7 +32,7 @@ function createTags(){
   tagsContainer.innerHTML="";
 
   const categories={
-    difficulty:"難易度",
+    difficulty:"推奨レベル",
     type:"種類",
     floor:"階層"
   };
