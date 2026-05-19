@@ -1,133 +1,181 @@
-body {
-  margin: 0;
-  font-family: Arial;
+/* =========================
+   PAGE
+========================= */
 
-  background: var(--bg);
-  color: var(--text);
+body{
+  margin:0;
+  padding:20px;
 
-  padding: 20px;
+  font-family:Arial;
+
+  background:var(--bg);
+  color:var(--text);
 }
 
-h1 {
-  margin-bottom: 10px;
+h1{
+  margin-bottom:10px;
 }
 
-input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
+/* =========================
+   SEARCH
+========================= */
 
-  background: var(--card);
-  border: 1px solid var(--border);
+input{
+  width:100%;
 
-  color: var(--text);
-  border-radius: 6px;
+  padding:10px;
+  margin-bottom:10px;
+
+  background:var(--card);
+  color:var(--text);
+
+  border:1px solid var(--border);
+  border-radius:6px;
+
+  outline:none;
+  transition:.2s;
 }
 
-#tags {
-  margin-bottom: 10px;
+input:focus{
+  border-color:rgba(120,180,255,.45);
+  box-shadow:0 0 14px rgba(120,180,255,.15);
 }
 
-.tag {
-  display: inline-block;
+/* =========================
+   TAGS
+========================= */
 
-  background: var(--card);
-  border: 1px solid var(--border);
-
-  padding: 5px 10px;
-  margin: 4px;
-  border-radius: 6px;
-
-  cursor: pointer;
-  user-select: none;
-
-  transition: 0.2s;
+#tags{
+  margin-bottom:10px;
 }
 
-.tag:hover {
-  border-color: rgba(120,180,255,0.35);
+.tag-group{
+  margin-bottom:15px;
 }
 
-.tag.active {
-  background: rgba(120,180,255,0.15);
-  border-color: rgba(120,180,255,0.45);
+.tag-group h3{
+  margin:5px 0;
+
+  font-size:14px;
+  color:var(--text-muted);
 }
 
-.quest {
-  display: flex;
+.tag{
+  display:inline-block;
 
-  background: var(--card);
-  border: 1px solid var(--border);
+  padding:5px 10px;
+  margin:4px;
 
-  margin: 10px 0;
-  border-radius: 10px;
-  overflow: hidden;
+  border-radius:6px;
 
-  cursor: pointer;
-  transition: 0.2s;
+  background:var(--card);
+  color:var(--text);
+
+  border:1px solid var(--border);
+
+  cursor:pointer;
+  user-select:none;
+
+  transition:.2s;
 }
 
-.quest:hover {
-  transform: scale(1.01);
-  border-color: rgba(120,180,255,0.35);
+.tag:hover{
+  border-color:rgba(120,180,255,.35);
 }
 
-.quest img {
-  width: 160px;
-  height: 100px;
-  object-fit: cover;
+/* ライトモード */
+.tag.active{
+  background:#111;
+  color:#fff;
+  border-color:#111;
 }
 
-.quest-content {
-  padding: 10px;
+/* ダークモード */
+[data-theme="dark"] .tag.active{
+  background:#fff;
+  color:#111;
+  border-color:#fff;
 }
 
-.stats {
-  font-size: 12px;
-  color: var(--text-muted);
+/* =========================
+   QUEST CARD
+========================= */
+
+.quest{
+  display:flex;
+
+  margin:10px 0;
+
+  border-radius:10px;
+  overflow:hidden;
+
+  background:var(--card);
+  border:1px solid var(--border);
+
+  cursor:pointer;
+
+  transition:.2s;
 }
 
-.tag-group {
-  margin-bottom: 15px;
+.quest:hover{
+  transform:scale(1.01);
+  border-color:rgba(120,180,255,.35);
 }
 
-.tag-group h3 {
-  margin: 5px 0;
-  font-size: 14px;
-  color: var(--text-muted);
+.quest img{
+  width:160px;
+  height:100px;
+
+  object-fit:cover;
 }
 
-/* ===== スマホ ===== */
+.quest-content{
+  padding:10px;
+}
 
-@media (max-width:768px) {
+.quest-content h3{
+  margin:0 0 6px;
+}
 
-  body {
-    padding: 10px;
+.stats{
+  font-size:12px;
+  color:var(--text-muted);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
+  body{
+    padding:10px;
   }
 
-  h1 {
-    font-size: 20px;
+  h1{
+    font-size:20px;
   }
 
-  .quest {
-    flex-direction: column;
+  input{
+    font-size:14px;
   }
 
-  .quest img {
-    width: 100%;
-    height: 160px;
+  .tag{
+    font-size:12px;
+    padding:4px 8px;
   }
 
-  .quest-content {
-    padding: 10px;
+  .quest{
+    flex-direction:column;
   }
 
-  input {
-    font-size: 14px;
+  .quest img{
+    width:100%;
+    height:160px;
   }
 
-  .tag {
-    font-size: 12px;
-    padding: 4px 8px;
+  .quest-content{
+    padding:10px;
   }
+
 }
