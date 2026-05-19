@@ -245,5 +245,134 @@
         "ショップ"
       ]
     }
+  },
+  {
+    "name":"Scuttle Crab Plush",
+    "image":"itempng/Scuttle Crab Plush.png",
+    "type":"雑貨",
+    "buy":"150",
+    "sell":"75",
+    "obtain":"ショップ,宝箱",
+    "link":"itemdetail/Scuttle Crab Plush.html",
+
+    "categories":{
+      "種類":"雑貨",
+      "入手":[
+        "ショップ",
+        "宝箱"
+      ]
+    }
+  },
+  {
+    "name":"Boar Plush",
+    "image":"itempng/Boar Plush.png",
+    "type":"雑貨",
+    "buy":"100",
+    "sell":"50",
+    "obtain":"ショップ",
+    "link":"itemdetail/Boar Plush.html",
+
+    "categories":{
+      "種類":"雑貨",
+      "入手":[
+        "ショップ"
+      ]
+    }
+  },
+  {
+    "name":"Nepenthes Plush",
+    "image":"itempng/Nepenthes Plush.png",
+    "type":"雑貨",
+    "buy":"100",
+    "sell":"50",
+    "obtain":"ショップ",
+    "link":"itemdetail/Nepenthes Plush.html",
+
+    "categories":{
+      "種類":"雑貨",
+      "入手":[
+        "ショップ"
+      ]
+    }
+  },
+  {
+    "name":"Wasp Plush",
+    "image":"itempng/Wasp Plush.png",
+    "type":"雑貨",
+    "buy":"100",
+    "sell":"50",
+    "obtain":"ショップ",
+    "link":"itemdetail/Wasp Plush.html",
+
+    "categories":{
+      "種類":"雑貨",
+      "入手":[
+        "ショップ"
+      ]
+    }
+  ,
+  {
+    "name":"Wolf Plush",
+    "image":"itempng/Wolf Plush.png",
+    "type":"雑貨",
+    "buy":"100",
+    "sell":"50",
+    "obtain":"ショップ",
+    "link":"itemdetail/Wolf Plush.html",
+
+    "categories":{
+      "種類":"雑貨",
+      "入手":[
+        "ショップ"
+      ]
+    }
+  },
+  {
+    "name":"Rat Plush",
+    "image":"itempng/Rat Plush.png",
+    "type":"雑貨",
+    "buy":"300",
+    "sell":"150",
+    "obtain":"ショップ",
+    "link":"itemdetail/Rat Plush.html",
+
+    "categories":{
+      "種類":"雑貨",
+      "入手":[
+        "ショップ"
+      ]
+    }
+  },
+  {
+    "name":"Baby Bell",
+    "image":"itempng/Baby Bell.png",
+    "type":"雑貨",
+    "buy":"100",
+    "sell":"50",
+    "obtain":"ショップ",
+    "link":"itemdetail/Baby Bell.html",
+
+    "categories":{
+      "種類":"雑貨",
+      "入手":[
+        "ショップ"
+      ]
+    }
+  },
+  {
+    "name":"Lantern",
+    "image":"itempng/Lantern.png",
+    "type":"道具",
+    "buy":"2500",
+    "sell":"1250",
+    "obtain":"ショップ",
+    "link":"itemdetail/Lantern.html",
+
+    "categories":{
+      "種類":"道具",
+      "入手":[
+        "ショップ"
+      ]
+    }
   }
 ]
