@@ -1,8 +1,10 @@
 body {
   margin: 0;
   font-family: Arial;
-  background: #0f0f14;
-  color: white;
+
+  background: var(--bg);
+  color: var(--text);
+
   padding: 20px;
 }
 
@@ -14,9 +16,11 @@ input {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  background: #1b1b24;
-  border: none;
-  color: white;
+
+  background: var(--card);
+  border: 1px solid var(--border);
+
+  color: var(--text);
   border-radius: 6px;
 }
 
@@ -26,30 +30,46 @@ input {
 
 .tag {
   display: inline-block;
-  background: #2a2a35;
+
+  background: var(--card);
+  border: 1px solid var(--border);
+
   padding: 5px 10px;
   margin: 4px;
   border-radius: 6px;
+
   cursor: pointer;
   user-select: none;
+
+  transition: 0.2s;
+}
+
+.tag:hover {
+  border-color: rgba(120,180,255,0.35);
 }
 
 .tag.active {
-  background: #5a5a7a;
+  background: rgba(120,180,255,0.15);
+  border-color: rgba(120,180,255,0.45);
 }
 
 .quest {
   display: flex;
-  background: #1b1b24;
+
+  background: var(--card);
+  border: 1px solid var(--border);
+
   margin: 10px 0;
   border-radius: 10px;
   overflow: hidden;
+
   cursor: pointer;
   transition: 0.2s;
 }
 
 .quest:hover {
   transform: scale(1.01);
+  border-color: rgba(120,180,255,0.35);
 }
 
 .quest img {
@@ -64,10 +84,23 @@ input {
 
 .stats {
   font-size: 12px;
-  color: #aaa;
+  color: var(--text-muted);
 }
-/* ===== スマホ対応 ===== */
-@media (max-width: 768px) {
+
+.tag-group {
+  margin-bottom: 15px;
+}
+
+.tag-group h3 {
+  margin: 5px 0;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* ===== スマホ ===== */
+
+@media (max-width:768px) {
+
   body {
     padding: 10px;
   }
