@@ -2,7 +2,11 @@
   {
     "name": "Green Herb Gathering",
     "page": "questlist/Green Herb Gathering.html",
-    "tags": ["初心者", "収集"],
+    "tags": {
+      "エリア": ["1階層"],
+      "推奨レベル": ["1Lv"],
+      "種類": ["収集"]
+    },
     "image": "../../assets/quest/Green Herb Gathering.png",
     "col": 50,
     "exp": 100,
@@ -12,7 +16,11 @@
   {
     "name": "The Mysterious Flower",
     "page": "questlist/The Mysterious Flower.html",
-    "tags": ["初心者", "収集"],
+    "tags": {
+      "エリア": ["1階層"],
+      "推奨レベル": ["1Lv"],
+      "種類": ["収集"]
+    },
     "image": "../../assets/quest/The Mysterious Flower.png",
     "col": 1750,
     "exp": 450,
