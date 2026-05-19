@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ink Nepenthes</title>
+
+<link rel="stylesheet" href="../../../assets/ui/layout.css">
+<link rel="stylesheet" href="detail.css">
+
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+<div class="page-content">
+
+<section class="monster-page">
+
+<h1 class="page-title">Ink Nepenthes</h1>
+
+<div class="container">
+
+    <!-- 上 -->
+    <section class="top">
+
+        <div class="monster-left">
+            <img src="../monsterpng/Flowered Nepenthes.png">
+        </div>
+
+        <div class="monster-right">
+            <p><strong>Col:</strong> 80</p>
+            <p><strong>経験値:</strong> 175</p>
+            <p><strong>ドロップ:</strong>Lrg.Ink.Sac,Blood Thorn</p>
+        </div>
+
+    </section>
+
+
+    <!-- 階層 -->
+    <section class="floor-section">
+
+        <div class="floor-list">
+
+            <button class="floor-btn"
+            onclick="changeMap('map/Ink Nepenthes_floor1.png')">
+            1階層
+            </button>
+
+            <button class="floor-btn"
+            onclick="changeMap(null)">
+            2階層
+            </button>
+
+        </div>
+
+        <div class="map-box" id="mapBox">
+            マップを選択
+        </div>
+
+    </section>
+
+
+    <!-- 攻撃 -->
+    <section>
+        <h2>モンスターの攻撃方法</h2>
+
+        <div class="attack">
+
+            <div class="attack-header"
+            onclick="toggle(this)">
+            ➤叩きつけ
+            </div>
+
+            <div class="attack-content">
+                <p>右手を前方に振り下ろして攻撃をする。ノックバックあり。</p>
+
+                <video controls>
+                    <source src="video/Ink Nepenthes/Ink Nepenthes_atk1.mp4">
+                </video>
+            </div>
+
+        </div>
+
+
+        <div class="attack">
+
+            <div class="attack-header"
+            onclick="toggle(this)">
+            ➤左右薙ぎ払い
+            </div>
+
+            <div class="attack-content">
+                <p>左右の手で順番に前方を薙ぎ払う攻撃。ノックバックあり。</p>
+
+                <video controls>
+                    <source src="video/Ink Nepenthes/Ink Nepenthes_atk2.mp4">
+                </video>
+            </div>
+
+
+             <div class="attack">
+
+            <div class="attack-header"
+            onclick="toggle(this)">
+            ➤回転攻撃
+            </div>
+
+            <div class="attack-content">
+                <p>1回転して周囲のプレイヤーに攻撃をする。やや大きめのノックバックあり。</p>
+
+                <video controls>
+                    <source src="video/Ink Nepenthes/Ink Nepenthes_atk3.mp4">
+                </video>
+            </div>
+
+
+            <div class="attack">
+
+            <div class="attack-header"
+            onclick="toggle(this)">
+            ➤体当たり
+            </div>
+
+            <div class="attack-content">
+                <p>植物の体に当たるとダメージを食らう。かなり大きめのノックバックあり。</p>
+
+                <video controls>
+                    <source src="video/Ink Nepenthes/Ink Nepenthes_atk4.mp4">
+                </video>
+            </div>
+               
+
+        </div>
+
+            
+        </div>
+
+    </section>
+
+</div>
+
+</section>
+</div>
+
+<script src="../../../assets/ui/layout.js"></script>
+<script src="detail.js"></script>
+
+<script>
+lucide.createIcons();
+</script>
+
+</body>
+</html>
