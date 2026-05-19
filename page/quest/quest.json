@@ -4,6 +4,7 @@
     "page": "questlist/Green Herb Gathering.html",
     "tags": {
       "エリア": ["1階層"],
+      "受注場所": ["Town of Beginnings"],
       "推奨レベル": ["1Lv"],
       "種類": ["収集"]
     },
@@ -18,6 +19,7 @@
     "page": "questlist/The Mysterious Flower.html",
     "tags": {
       "エリア": ["1階層"],
+      "受注場所": ["Town of Beginnings"],
       "推奨レベル": ["1Lv"],
       "種類": ["収集"]
     },
