@@ -83,18 +83,10 @@ input:focus{
   border-color:rgba(120,180,255,.35);
 }
 
-/* ライトモード */
 .tag.active{
-  background:#111;
-  color:#fff;
-  border-color:#111;
-}
-
-/* ダークモード */
-[data-theme="dark"] .tag.active{
-  background:#fff;
-  color:#111;
-  border-color:#fff;
+  background:rgba(120,180,255,0.15);
+  color:var(--text);
+  border-color:rgba(120,180,255,0.45);
 }
 
 /* =========================
