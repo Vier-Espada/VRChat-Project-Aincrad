@@ -550,5 +550,37 @@
         "ショップ"
       ]
     }
+  },
+  {
+    "name":"Whole Watermelon",
+    "image":"itempng/Whole Watermelon.png",
+    "type":"消耗品",
+    "buy":"30",
+    "sell":"15",
+    "obtain":"ショップ",
+    "link":"itemdetail/Whole Watermelon.html",
+
+    "categories":{
+      "種類":"消耗品",
+      "入手":[
+        "ショップ"
+      ]
+    }
+  },
+  {
+    "name":"Watermelon Slice",
+    "image":"itempng/Watermelon Slice.png",
+    "type":"消耗品",
+    "buy":"8",
+    "sell":"4",
+    "obtain":"ショップ",
+    "link":"itemdetail/Watermelon Slice.html",
+
+    "categories":{
+      "種類":"消耗品",
+      "入手":[
+        "ショップ"
+      ]
+    }
   }
 ]
