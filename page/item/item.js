@@ -11,10 +11,10 @@ let items = [];
 let activeFilters = {};
 
 fetch("item.json")
-.then(res=>res.json())
-.then(data=>{
+.then(res => res.json())
+.then(data => {
 
-  items=data;
+  items = data;
 
   createCategoryTags();
   renderItems(items);
@@ -23,22 +23,20 @@ fetch("item.json")
 
 function createCategoryTags(){
 
-  const categories={};
+  const categories = {};
 
-  items.forEach(item=>{
+  items.forEach(item => {
 
     Object.entries(item.categories)
-    .forEach(([category,value])=>{
+    .forEach(([category,value]) => {
 
       if(!categories[category]){
-
-        categories[category]=new Set();
-
+        categories[category] = new Set();
       }
 
       if(Array.isArray(value)){
 
-        value.forEach(v=>
+        value.forEach(v =>
           categories[category].add(v)
         );
 
@@ -53,32 +51,30 @@ function createCategoryTags(){
   });
 
   Object.entries(categories)
-  .forEach(([category,values])=>{
+  .forEach(([category,values]) => {
 
     const section =
     document.createElement("div");
 
-    section.innerHTML=
+    section.innerHTML =
     `<h3>${category}</h3>
     <div class="tag-group"></div>`;
 
-    const group=
+    const group =
     section.querySelector(".tag-group");
 
-    values.forEach(value=>{
+    values.forEach(value => {
 
-      const button=
+      const button =
       document.createElement("button");
 
-      button.className="tag";
-      button.textContent=value;
+      button.className = "tag";
+      button.textContent = value;
 
-      button.onclick=()=>{
+      button.onclick = () => {
 
         if(!activeFilters[category]){
-
-          activeFilters[category]=[];
-
+          activeFilters[category] = [];
         }
 
         if(
@@ -86,9 +82,9 @@ function createCategoryTags(){
           .includes(value)
         ){
 
-          activeFilters[category]=
+          activeFilters[category] =
           activeFilters[category]
-          .filter(v=>v!==value);
+          .filter(v => v !== value);
 
           button.classList.remove("active");
 
@@ -117,7 +113,7 @@ function createCategoryTags(){
 
 function renderItems(data){
 
-  itemList.innerHTML=`
+  itemList.innerHTML = `
 
   <div class="item-header">
 
@@ -130,9 +126,9 @@ function renderItems(data){
   </div>
   `;
 
-  data.forEach(item=>{
+  data.forEach(item => {
 
-    itemList.innerHTML+=`
+    itemList.innerHTML += `
 
     <div class="item-card">
 
@@ -175,29 +171,31 @@ function renderItems(data){
 
 function filterItems(){
 
-  const value=
+  const value =
   searchInput.value.toLowerCase();
 
-  const filtered=
-  items.filter(item=>{
+  const filtered =
+  items.filter(item => {
 
-    const matchesSearch=
+    const matchesSearch =
     item.name
     .toLowerCase()
     .includes(value);
 
-    const matchesCategory=
+    const matchesCategory =
     Object.entries(activeFilters)
-    .every(([category,values])=>{
+    .every(([category,values]) => {
 
-      const itemValue=
+      if(values.length === 0){
+        return true;
+      }
+
+      const itemValue =
       item.categories[category];
 
-      if(
-        Array.isArray(itemValue)
-      ){
+      if(Array.isArray(itemValue)){
 
-        return values.some(v=>
+        return values.some(v =>
           itemValue.includes(v)
         );
 
@@ -209,7 +207,7 @@ function filterItems(){
 
     });
 
-    return(
+    return (
       matchesSearch &&
       matchesCategory
     );
@@ -221,6 +219,6 @@ function filterItems(){
 }
 
 searchInput.addEventListener(
-"input",
-filterItems
+  "input",
+  filterItems
 );
