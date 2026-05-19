@@ -374,5 +374,181 @@
         "ショップ"
       ]
     }
+  },
+  {
+    "name":"Yummy Pumpkin",
+    "image":"itempng/Yummy Pumpkin.png",
+    "type":"消耗品",
+    "buy":"250",
+    "sell":"125",
+    "obtain":"ショップ",
+    "link":"itemdetail/Yummy Pumpkin.html",
+
+    "categories":{
+      "種類":"消耗品",
+      "入手":[
+        "ショップ"
+      ]
+    }
+  },
+  {
+    "name":"Bread Bun",
+    "image":"itempng/Bread Bun.png",
+    "type":"消耗品",
+    "buy":"12",
+    "sell":"6",
+    "obtain":"ショップ",
+    "link":"itemdetail/Bread Bun.html",
+
+    "categories":{
+      "種類":"消耗品",
+      "入手":[
+        "ショップ"
+      ]
+    }
+  },
+  {
+    "name":"Bread Rall",
+    "image":"itempng/Bread Rall.png",
+    "type":"消耗品",
+    "buy":"12",
+    "sell":"6",
+    "obtain":"ショップ",
+    "link":"itemdetail/Bread Rall.html",
+
+    "categories":{
+      "種類":"消耗品",
+      "入手":[
+        "ショップ"
+      ]
+    }
+  },
+  {
+    "name":"Bread Loaf",
+    "image":"itempng/Bread Loaf.png",
+    "type":"消耗品",
+    "buy":"12",
+    "sell":"6",
+    "obtain":"ショップ",
+    "link":"itemdetail/Bread Loaf.html",
+
+    "categories":{
+      "種類":"消耗品",
+      "入手":[
+        "ショップ"
+      ]
+    }
+  },
+  {
+    "name":"Mug of Ale",
+    "image":"itempng/Mug of Ale.png",
+    "type":"消耗品",
+    "buy":"36",
+    "sell":"18",
+    "obtain":"ショップ",
+    "link":"itemdetail/Mug of Ale.html",
+
+    "categories":{
+      "種類":"消耗品",
+      "入手":[
+        "ショップ"
+      ]
+    }
+  },
+  {
+    "name":"Chicken Skewer",
+    "image":"itempng/Chicken Skewer.png",
+    "type":"消耗品",
+    "buy":"12",
+    "sell":"6",
+    "obtain":"ショップ",
+    "link":"itemdetail/Chicken Skewer.html",
+
+    "categories":{
+      "種類":"消耗品",
+      "入手":[
+        "ショップ"
+      ]
+    }
+  },
+  {
+    "name":"Veggie Skewer",
+    "image":"itempng/Veggie Skewer.png",
+    "type":"消耗品",
+    "buy":"10",
+    "sell":"5",
+    "obtain":"ショップ",
+    "link":"itemdetail/Veggie Skewer.html",
+
+    "categories":{
+      "種類":"消耗品",
+      "入手":[
+        "ショップ"
+      ]
+    }
+  },
+  {
+    "name":"Iced Tea",
+    "image":"itempng/Iced Tea.png",
+    "type":"消耗品",
+    "buy":"8",
+    "sell":"4",
+    "obtain":"ショップ",
+    "link":"itemdetail/Iced Tea.html",
+
+    "categories":{
+      "種類":"消耗品",
+      "入手":[
+        "ショップ"
+      ]
+    }
+  },
+  {
+    "name":"Cup of Tea",
+    "image":"itempng/Cup of Tea.png",
+    "type":"消耗品",
+    "buy":"1",
+    "sell":"0",
+    "obtain":"ショップ",
+    "link":"itemdetail/Cup of Tea.html",
+
+    "categories":{
+      "種類":"消耗品",
+      "入手":[
+        "ショップ"
+      ]
+    }
+  },
+  {
+    "name":"Beef Skewer",
+    "image":"itempng/Beef Skewer.png",
+    "type":"消耗品",
+    "buy":"12",
+    "sell":"6",
+    "obtain":"ショップ",
+    "link":"itemdetail/Beef Skewer.html",
+
+    "categories":{
+      "種類":"消耗品",
+      "入手":[
+        "ショップ"
+      ]
+    }
+  },
+  {
+    "name":"Cheese",
+    "image":"itempng/Cheese.png",
+    "type":"消耗品",
+    "buy":"12",
+    "sell":"6",
+    "obtain":"ショップ",
+    "link":"itemdetail/Cheese.html",
+
+    "categories":{
+      "種類":"消耗品",
+      "入手":[
+        "ショップ"
+      ]
+    }
   }
 ]
