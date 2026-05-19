@@ -43,5 +43,50 @@
     "exp": 100,
     "guildExp": 0,
     "timeLimit": "無制限"
+  },
+  {
+    "name": "Ester's Herb Supply",
+    "page": "questlist/Ester's Herb Supply.html",
+    "tags": {
+      "エリア": ["1階層"],
+      "受注場所": ["Town of Beginnings"],
+      "推奨レベル": ["1Lv"],
+      "種類": ["収集"]
+    },
+    "image": "../../assets/quest/Ester's Herb Supply.png",
+    "col": 400,
+    "exp": 325,
+    "guildExp": 0,
+    "timeLimit": "無制限"
+  },
+  {
+    "name": "Being Neighborly",
+    "page": "questlist/Being Neighborly.html",
+    "tags": {
+      "エリア": ["1階層"],
+      "受注場所": ["Town of Beginnings"],
+      "推奨レベル": ["1Lv"],
+      "種類": ["収集"]
+    },
+    "image": "../../assets/quest/Being Neighborly.png",
+    "col": 350,
+    "exp": 100,
+    "guildExp": 0,
+    "timeLimit": "無制限"
+  },
+  {
+    "name": "Depression's 2nd Wind?",
+    "page": "questlist/Depression's 2nd Wind?.html",
+    "tags": {
+      "エリア": ["1階層"],
+      "受注場所": ["Town of Beginnings"],
+      "推奨レベル": ["1Lv"],
+      "種類": ["収集"]
+    },
+    "image": "../../assets/quest/Depression's 2nd Wind?.png",
+    "col": 500,
+    "exp": 200,
+    "guildExp": 0,
+    "timeLimit": "無制限"
   }
 ]
