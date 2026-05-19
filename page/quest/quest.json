@@ -41,7 +41,7 @@
     "image": "../../assets/quest/Stella's Request.png",
     "col": 300,
     "exp": 100,
-    "guildExp": 10,
+    "guildExp": 0,
     "timeLimit": "無制限"
   }
 ]
