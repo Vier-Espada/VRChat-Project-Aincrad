@@ -17,5 +17,55 @@
         "宝箱"
       ]
     }
+  },
+  {
+    "name":"Healing Crystal",
+    "image":"itempng/Healing Crystal.png",
+    "type":"消耗品",
+    "buy":"2100",
+    "sell":"1050",
+    "obtain":"ショップ,宝箱",
+    "link":"itemdetail/Healing Crystal.html",
+
+    "categories":{
+      "種類":"消耗品",
+      "入手":[
+        "ショップ",
+        "宝箱"
+      ]
+    }
+  },
+  {
+    "name":"Teleport Crystal",
+    "image":"itempng/Teleport Crystal.png",
+    "type":"消耗品",
+    "buy":"500",
+    "sell":"250",
+    "obtain":"ショップ,宝箱",
+    "link":"itemdetail/Teleport Crystal.html",
+
+    "categories":{
+      "種類":"消耗品",
+      "入手":[
+        "ショップ",
+        "宝箱"
+      ]
+    }
+  },
+  {
+    "name":"Curing Crystal",
+    "image":"itempng/Curing Crystal.png",
+    "type":"消耗品",
+    "buy":"850",
+    "sell":"425",
+    "obtain":"ショップ",
+    "link":"itemdetail/Healing Crystal.html",
+
+    "categories":{
+      "種類":"消耗品",
+      "入手":[
+        "ショップ"
+      ]
+    }
   }
 ]
