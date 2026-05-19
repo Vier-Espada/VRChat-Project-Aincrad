@@ -133,5 +133,117 @@
         "採取"
       ]
     }
+  },
+  {
+    "name":"Lunar Tear",
+    "image":"itempng/Lunar Tear.png",
+    "type":"クエスト",
+    "buy":"(購入不可)0",
+    "sell":"(売却不可)0",
+    "obtain":"宝箱",
+    "link":"itemdetail/Lunar Tear.html",
+
+    "categories":{
+      "種類":"クエスト",
+      "入手":[
+        "宝箱"
+      ]
+    }
+  },
+  {
+    "name":"Red Rose",
+    "image":"itempng/Red Rose.png",
+    "type":"雑貨",
+    "buy":"300",
+    "sell":"150",
+    "obtain":"ショップ",
+    "link":"itemdetail/Red Rose.html",
+
+    "categories":{
+      "種類":"雑貨",
+      "入手":[
+        "ショップ"
+      ]
+    }
+  },
+  {
+    "name":"White Rose",
+    "image":"itempng/White Rose.png",
+    "type":"雑貨",
+    "buy":"300",
+    "sell":"150",
+    "obtain":"ショップ",
+    "link":"itemdetail/White Rose.html",
+
+    "categories":{
+      "種類":"雑貨",
+      "入手":[
+        "ショップ"
+      ]
+    }
+  },
+  {
+    "name":"Yellow Rose",
+    "image":"itempng/Yellow Rose.png",
+    "type":"雑貨",
+    "buy":"300",
+    "sell":"150",
+    "obtain":"ショップ",
+    "link":"itemdetail/Yellow Rose.html",
+
+    "categories":{
+      "種類":"雑貨",
+      "入手":[
+        "ショップ"
+      ]
+    }
+  },
+  {
+    "name":"Orange Rose",
+    "image":"itempng/Orange Rose.png",
+    "type":"雑貨",
+    "buy":"300",
+    "sell":"150",
+    "obtain":"ショップ",
+    "link":"itemdetail/Orange Rose.html",
+
+    "categories":{
+      "種類":"雑貨",
+      "入手":[
+        "ショップ"
+      ]
+    }
+  },
+  {
+    "name":"Pink Rose",
+    "image":"itempng/Pink Rose.png",
+    "type":"雑貨",
+    "buy":"300",
+    "sell":"150",
+    "obtain":"ショップ",
+    "link":"itemdetail/Pink Rose.html",
+
+    "categories":{
+      "種類":"雑貨",
+      "入手":[
+        "ショップ"
+      ]
+    }
+  },
+  {
+    "name":"Valentine's Bouquet",
+    "image":"itempng/Valentine's Bouquet.png",
+    "type":"雑貨",
+    "buy":"1200",
+    "sell":"600",
+    "obtain":"ショップ",
+    "link":"itemdetail/Valentine's Bouquet.html",
+
+    "categories":{
+      "種類":"雑貨",
+      "入手":[
+        "ショップ"
+      ]
+    }
   }
 ]
