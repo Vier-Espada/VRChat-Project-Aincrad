@@ -8,9 +8,9 @@ navbar.innerHTML = `
 
 <div class="topbar-left">
 
-  <div class="logo">
-    Project Aincrad
-  </div>
+  <a class="logo" href="/VRChat-Project-Aincrad/page/top/top.html">
+  Project Aincrad
+</a>
 
   <nav class="nav-links">
 
