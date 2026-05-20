@@ -10,6 +10,7 @@
 
 <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
 
 <div class="page-content">
@@ -28,7 +29,8 @@
 
         <p><strong>Col:</strong> 50</p>
         <p><strong>経験値:</strong> 75</p>
-        <p><strong>Drop:</strong> Metal Scraps, Quartanier</p>
+        <p><strong>Drop:</strong>
+        Metal Scraps, Quartanier</p>
 
     </aside>
 
@@ -36,18 +38,33 @@
     <!-- 右 -->
     <main class="monster-main">
 
+        <!-- 戻る -->
         <div class="top-bar">
+
             <button class="back-btn"
             onclick="history.back()">
                 ← 戻る
             </button>
+
         </div>
 
 
+        <!-- タブ -->
         <div class="tabs">
-            <button onclick="showTab('info')">基本情報</button>
-            <button onclick="showTab('map')">出現マップ</button>
-            <button onclick="showTab('attack')">攻撃</button>
+
+            <button class="active"
+            onclick="showTab('info')">
+                基本情報
+            </button>
+
+            <button onclick="showTab('map')">
+                出現マップ
+            </button>
+
+            <button onclick="showTab('attack')">
+                攻撃
+            </button>
+
         </div>
 
 
@@ -95,6 +112,7 @@
         <section id="attack"
         class="tab-content">
 
+            <!-- 攻撃1 -->
             <div class="attack">
 
                 <div class="attack-header"
@@ -103,16 +121,22 @@
                 </div>
 
                 <div class="attack-content">
-                    <p>頭突き攻撃。後方ノックバック。</p>
+
+                    <p>
+                        頭突き攻撃。<br>
+                        後方ノックバック。
+                    </p>
 
                     <video controls>
                         <source src="video/Slate Boar/Slate Boar_atk1.mp4">
                     </video>
+
                 </div>
 
             </div>
 
 
+            <!-- 攻撃2 -->
             <div class="attack">
 
                 <div class="attack-header"
@@ -121,16 +145,22 @@
                 </div>
 
                 <div class="attack-content">
-                    <p>前進して頭突き。上方ノックバック。</p>
+
+                    <p>
+                        前進して頭突き。<br>
+                        上方ノックバック。
+                    </p>
 
                     <video controls>
                         <source src="video/Slate Boar/Slate Boar_atk2.mp4">
                     </video>
+
                 </div>
 
             </div>
 
 
+            <!-- 攻撃3 -->
             <div class="attack">
 
                 <div class="attack-header"
@@ -139,16 +169,21 @@
                 </div>
 
                 <div class="attack-content">
-                    <p>距離を取って突進。</p>
+
+                    <p>
+                        距離を取ってから突進する。
+                    </p>
 
                     <video controls>
                         <source src="video/Slate Boar/Slate Boar_atk3.mp4">
                     </video>
+
                 </div>
 
             </div>
 
 
+            <!-- 攻撃4 -->
             <div class="attack">
 
                 <div class="attack-header"
@@ -157,11 +192,15 @@
                 </div>
 
                 <div class="attack-content">
-                    <p>遠距離時に高速接近。</p>
+
+                    <p>
+                        遠距離時に高速接近する。
+                    </p>
 
                     <video controls>
                         <source src="video/Slate Boar/Slate Boar_atk4.mp4">
                     </video>
+
                 </div>
 
             </div>
