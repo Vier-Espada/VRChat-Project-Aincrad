@@ -2,139 +2,222 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
 <title>Ink Boar</title>
 
-<link rel="stylesheet" href="../../../assets/ui/layout.css">
-<link rel="stylesheet" href="detail.css">
+<link rel="stylesheet"
+href="../../../assets/ui/layout.css">
+
+<link rel="stylesheet"
+href="detail.css">
 
 <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
 
 <div class="page-content">
 
 <section class="monster-page">
 
-<h1 class="page-title">Ink Boar</h1>
+<h1 class="page-title">
+    Ink Boar
+</h1>
 
-<div class="container">
+<div class="monster-layout">
 
-    <!-- 上 -->
-    <section class="top">
+    <!-- 左 -->
+    <aside class="monster-side">
 
-        <div class="monster-left">
-            <img src="../monsterpng/Ink Boar.png">
-        </div>
+        <img src="../monsterpng/Ink Boar.png">
 
-        <div class="monster-right">
-            <p><strong>Col:</strong> 80</p>
-            <p><strong>経験値:</strong> 90</p>
-            <p><strong>ドロップ:</strong> Med.Ink.Sac, Quartanier</p>
-        </div>
+        <h2>Ink Boar</h2>
 
-    </section>
+        <p><strong>Col:</strong> 80</p>
+        <p><strong>経験値:</strong> 90</p>
+        <p><strong>Drop:</strong>
+        Med.Ink.Sac, Quartanier</p>
+
+    </aside>
 
 
-    <!-- 階層 -->
-    <section class="floor-section">
+    <!-- 右 -->
+    <main class="monster-main">
 
-        <div class="floor-list">
+        <!-- 戻る -->
+        <div class="top-bar">
 
-            <button class="floor-btn"
-            onclick="changeMap('map/Ink Boar_floor1.png')">
-            1階層
+            <button class="back-btn"
+            onclick="history.back()">
+
+                ← 戻る
+
             </button>
 
-            <button class="floor-btn"
-            onclick="changeMap(null)">
-            2階層
+        </div>
+
+
+        <!-- タブ -->
+        <div class="tabs">
+
+            <button class="active"
+                onclick="showTab('info')">
+                基本情報
+            </button>
+
+            <button onclick="showTab('map')">
+                出現マップ
+            </button>
+
+            <button onclick="showTab('attack')">
+                攻撃
             </button>
 
         </div>
 
-        <div class="map-box" id="mapBox">
-            マップを選択
-        </div>
 
-    </section>
+        <!-- 基本 -->
+        <section id="info"
+        class="tab-content active">
+
+            <h2>モンスター詳細</h2>
+
+            <p>
+                上級プレイヤー向けの強力なモンスター。<br>
+                高威力のノックバック攻撃と突進を行う。
+            </p>
+
+        </section>
 
 
-    <!-- 攻撃 -->
-    <section>
-        <h2>モンスターの攻撃方法</h2>
+        <!-- マップ -->
+        <section id="map"
+        class="tab-content">
 
-        <div class="attack">
+            <div class="floor-list">
 
-            <div class="attack-header"
-            onclick="toggle(this)">
-            ➤頭突き-1
+                <button class="floor-btn"
+                onclick="changeMap('map/Ink Boar_floor1.png',this)">
+                    1階層
+                </button>
+
+                <button class="floor-btn"
+                onclick="changeMap(null,this)">
+                    2階層
+                </button>
+
             </div>
 
-            <div class="attack-content">
-                <p>プレイヤーが近づくと吹き飛ばす攻撃を行う。後方へノックバックあり。</p>
+            <div class="map-box"
+            id="mapBox">
 
-                <video controls>
-                    <source src="video/Ink Boar/Ink Boar_atk1.mp4">
-                </video>
+                マップを選択
+
             </div>
 
-        </div>
+        </section>
 
 
-        <div class="attack">
+        <!-- 攻撃 -->
+        <section id="attack"
+        class="tab-content">
 
-            <div class="attack-header"
-            onclick="toggle(this)">
-            ➤頭突き-2
+            <div class="attack">
+
+                <div class="attack-header"
+                onclick="toggle(this)">
+                    ➤ 頭突き-1
+                </div>
+
+                <div class="attack-content">
+
+                    <p>
+                        頭突き攻撃をしてくる。<br>
+                        後方へノックバックあり。
+                    </p>
+
+                    <video controls>
+                        <source src="video/Ink Boar/Ink Boar_atk1.mp4">
+                    </video>
+
+                </div>
+
             </div>
 
-            <div class="attack-content">
-                <p>一歩前に出て突進する攻撃。上方向へノックバックあり。</p>
 
-                <video controls>
-                    <source src="video/Ink Boar/Ink Boar_atk2.mp4">
-                </video>
+            <div class="attack">
+
+                <div class="attack-header"
+                onclick="toggle(this)">
+                    ➤ 頭突き-2
+                </div>
+
+                <div class="attack-content">
+
+                    <p>
+                        一歩前に出て頭突き攻撃。<br>
+                        上方へノックバックあり。
+                    </p>
+
+                    <video controls>
+                        <source src="video/Ink Boar/Ink Boar_atk2.mp4">
+                    </video>
+
+                </div>
+
             </div>
 
 
-             <div class="attack">
+            <div class="attack">
 
-            <div class="attack-header"
-            onclick="toggle(this)">
-            ➤後退 → 突進
+                <div class="attack-header"
+                onclick="toggle(this)">
+                    ➤ 後退 → 突進
+                </div>
+
+                <div class="attack-content">
+
+                    <p>
+                        距離を取った後に振り返って突進。<br>
+                        後方ノックバックあり。
+                    </p>
+
+                    <video controls>
+                        <source src="video/Ink Boar/Ink Boar_atk3.mp4">
+                    </video>
+
+                </div>
+
             </div>
 
-            <div class="attack-content">
-                <p>一度距離を取り、振り向いてから突進する攻撃。</p>
 
-                <video controls>
-                    <source src="video/Ink Boar/Ink Boar_atk3.mp4">
-                </video>
+            <div class="attack">
+
+                <div class="attack-header"
+                onclick="toggle(this)">
+                    ➤ 突進
+                </div>
+
+                <div class="attack-content">
+
+                    <p>
+                        プレイヤーが離れると突進。<br>
+                        後方ノックバックあり。
+                    </p>
+
+                    <video controls>
+                        <source src="video/Ink Boar/Ink Boar_atk4.mp4">
+                    </video>
+
+                </div>
+
             </div>
 
-        </div>
+        </section>
 
-
-        <div class="attack">
-
-            <div class="attack-header"
-            onclick="toggle(this)">
-            ➤突進
-            </div>
-
-            <div class="attack-content">
-                <p>プレイヤーと距離があると突進してくる攻撃。</p>
-
-                <video controls>
-                    <source src="video/Ink Boar/Ink Boar_atk4.mp4">
-                </video>
-            </div>
-
-            
-        </div>
-
-    </section>
+    </main>
 
 </div>
 
