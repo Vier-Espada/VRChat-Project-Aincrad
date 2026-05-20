@@ -225,16 +225,31 @@ video{
 
 }
 
-a,
-a:visited{
+.monster-main a,
+.monster-side a,
+.tab-content a,
+.attack-content a{
     color:#00cc66;
     text-decoration:underline;
 }
 
-a:hover{
+.monster-main a:visited,
+.monster-side a:visited,
+.tab-content a:visited,
+.attack-content a:visited{
+    color:#00cc66;
+}
+
+.monster-main a:hover,
+.monster-side a:hover,
+.tab-content a:hover,
+.attack-content a:hover{
     color:#33dd88;
 }
 
-a:active{
+.monster-main a:active,
+.monster-side a:active,
+.tab-content a:active,
+.attack-content a:active{
     color:#00cc66;
 }
