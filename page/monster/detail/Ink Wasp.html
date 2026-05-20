@@ -2,121 +2,200 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
 <title>Ink Wasp</title>
 
-<link rel="stylesheet" href="../../../assets/ui/layout.css">
-<link rel="stylesheet" href="detail.css">
+<link rel="stylesheet"
+href="../../../assets/ui/layout.css">
+
+<link rel="stylesheet"
+href="detail.css">
 
 <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
 
 <div class="page-content">
 
 <section class="monster-page">
 
-<h1 class="page-title">Ink Wasp</h1>
+<h1 class="page-title">
+    Ink Wasp
+</h1>
 
-<div class="container">
+<div class="monster-layout">
 
-    <!-- 上 -->
-    <section class="top">
+    <!-- 左 -->
+    <aside class="monster-side">
 
-        <div class="monster-left">
-            <img src="../monsterpng/Ink Wasp.png">
-        </div>
+        <img src="../monsterpng/Ink Wasp.png">
 
-        <div class="monster-right">
-            <p><strong>Col:</strong> 75</p>
-            <p><strong>経験値:</strong> 80</p>
-            <p><strong>ドロップ:</strong> Sml.Ink.Sac, Vespid Rapier</p>
-        </div>
+        <h2>Ink Wasp</h2>
 
-    </section>
+        <p><strong>Col:</strong> 75</p>
+        <p><strong>経験値:</strong> 80</p>
+        <p><strong>Drop:</strong>
+        Sml.Ink.Sac, Vespid Rapier</p>
+
+    </aside>
 
 
-    <!-- 階層 -->
-    <section class="floor-section">
+    <!-- 右 -->
+    <main class="monster-main">
 
-        <div class="floor-list">
+        <!-- 戻る -->
+        <div class="top-bar">
 
-            <button class="floor-btn"
-            onclick="changeMap('map/InkWasp_floor1.png')">
-            1階層
+            <button class="back-btn"
+            onclick="history.back()">
+
+                ← 戻る
+
             </button>
 
-            <button class="floor-btn"
-            onclick="changeMap(null)">
-            2階層
+        </div>
+
+
+        <!-- タブ -->
+        <div class="tabs">
+
+            <button onclick="showTab('info')">
+                基本情報
+            </button>
+
+            <button onclick="showTab('map')">
+                出現マップ
+            </button>
+
+            <button onclick="showTab('attack')">
+                攻撃
             </button>
 
         </div>
 
-        <div class="map-box" id="mapBox">
-            マップを選択
-        </div>
 
-    </section>
+        <!-- 基本 -->
+        <section id="info"
+        class="tab-content active">
+
+            <h2>モンスター詳細</h2>
+
+            <p>
+                クエストで必要なアイテムを落とすモンスター。<br>
+                攻撃力は90とかなり高く、体力管理をしっかりしないと高レベルプレイヤーでも死ぬことがある。
+            </p>
+
+        </section>
 
 
-    <!-- 攻撃 -->
-    <section>
-        <h2>モンスターの攻撃方法</h2>
+        <!-- マップ -->
+        <section id="map"
+        class="tab-content">
 
-        <div class="attack">
+            <div class="floor-list">
 
-            <div class="attack-header"
-            onclick="toggle(this)">
-            ➤刺突-単発
+                <button class="floor-btn"
+                onclick="changeMap('map/Ink Wasp_floor1.png',this)">
+                    1階層
+                </button>
+
+                <button class="floor-btn"
+                onclick="changeMap(null,this)">
+                    2階層
+                </button>
+
             </div>
 
-            <div class="attack-content">
-                <p>プレイヤーに対して単発の突きを行う。</p>
+            <div class="map-box"
+            id="mapBox">
 
-                <video controls>
-                    <source src="video/Ink Wasp/Ink Wasp_atk1.mp4">
-                </video>
+                マップを選択
+
             </div>
 
-        </div>
+        </section>
 
 
-        <div class="attack">
+        <!-- 攻撃 -->
+        <section id="attack"
+        class="tab-content">
 
-            <div class="attack-header"
-            onclick="toggle(this)">
-            ➤刺突-4発
+            <!-- 攻撃1 -->
+            <div class="attack">
+
+                <div class="attack-header"
+                onclick="toggle(this)">
+                    ➤ 刺突-単発
+                </div>
+
+                <div class="attack-content">
+
+                    <p>
+                        プレイヤーに対して単発の突きを行う。
+                    </p>
+
+                    <video controls>
+                        <source src="video/Ink Wasp/Ink Wasp_atk1.mp4">
+                    </video>
+
+                </div>
+
             </div>
 
-            <div class="attack-content">
-                <p>プレイヤーにやや早い速度で接近して刺突攻撃を４回行う。</p>
 
-                <video controls>
-                    <source src="video/Ink Wasp/Ink Wasp_atk2.mp4">
-                </video>
+            <!-- 攻撃2 -->
+            <div class="attack">
+
+                <div class="attack-header"
+                onclick="toggle(this)">
+                    ➤ 刺突-4発
+                </div>
+
+                <div class="attack-content">
+
+                    <p>
+                        やや早い速度で接近し、<br>
+                        刺突攻撃を4回行う。
+                    </p>
+
+                    <video controls>
+                        <source src="video/Ink Wasp/Ink Wasp_atk2.mp4">
+                    </video>
+
+                </div>
+
             </div>
-          
 
-           <div class="attack">
 
-            <div class="attack-header"
-            onclick="toggle(this)">
-            ➤毒
+            <!-- 攻撃3 -->
+            <div class="attack">
+
+                <div class="attack-header"
+                onclick="toggle(this)">
+                    ➤ 毒
+                </div>
+
+                <div class="attack-content">
+
+                    <p>
+                        プレイヤーとの距離がある場合、<br>
+                        毒を飛ばす遠距離攻撃を行う。
+                    </p>
+
+                    <video controls>
+                        <source src="video/Ink Wasp/Ink Wasp_atk3.mp4">
+                    </video>
+
+                </div>
+
             </div>
 
-            <div class="attack-content">
-                <p>プレイヤーとの距離がある場合毒を飛ばす遠距離攻撃を行う。</p>
+        </section>
 
-                <video controls>
-                    <source src="video/Ink Wasp/Ink Wasp_atk3.mp4">
-                </video>
-            </div>
-             
-
-        </div>
-
-    </section>
+    </main>
 
 </div>
 
