@@ -28,7 +28,11 @@ body.light{
     gap:30px;
 }
 
-/* Cards */
+.monster-side,
+.monster-main{
+    border-radius:16px;
+    padding:25px;
+}
 
 body.dark .monster-side,
 body.dark .monster-main{
@@ -42,15 +46,45 @@ body.light .monster-main{
     box-shadow:0 2px 12px rgba(0,0,0,.08);
 }
 
-.monster-side,
-.monster-main{
-    border-radius:16px;
-    padding:25px;
-}
-
 .monster-side img{
     width:100%;
     border-radius:14px;
+}
+
+/* Top bar */
+
+.top-bar{
+    display:flex;
+    justify-content:flex-end;
+    margin-bottom:15px;
+}
+
+.back-btn{
+    padding:10px 18px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.25s;
+}
+
+body.dark .back-btn{
+    background:#222;
+    color:white;
+}
+
+body.dark .back-btn:hover{
+    background:#333;
+}
+
+body.light .back-btn{
+    background:white;
+    color:#111;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+body.light .back-btn:hover{
+    background:#eee;
 }
 
 /* Tabs */
@@ -70,8 +104,6 @@ body.light .monster-main{
     transition:.25s;
 }
 
-/* Dark Buttons */
-
 body.dark .tabs button,
 body.dark .floor-btn,
 body.dark .attack,
@@ -85,8 +117,6 @@ body.dark .floor-btn:hover,
 body.dark .attack-header:hover{
     background:#333;
 }
-
-/* Light Buttons */
 
 body.light .tabs button,
 body.light .floor-btn,
@@ -168,8 +198,6 @@ video{
     width:100%;
     border-radius:12px;
 }
-
-/* Mobile */
 
 @media(max-width:900px){
 
