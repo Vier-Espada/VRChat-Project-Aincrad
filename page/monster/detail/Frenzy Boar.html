@@ -10,138 +10,141 @@
 
 <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body>
+<body class="dark">
 
 <div class="page-content">
-
 <section class="monster-page">
 
 <h1 class="page-title">Frenzy Boar</h1>
 
-<div class="container">
+<div class="monster-layout">
 
-    <!-- 上 -->
-    <section class="top">
+    <!-- 左 -->
+    <aside class="monster-side">
+        <img src="../monsterpng/Frenzy Boar.png">
 
-        <div class="monster-left">
-            <img src="../monsterpng/Frenzy Boar.png">
-        </div>
+        <h2>Frenzy Boar</h2>
 
-        <div class="monster-right">
-            <p><strong>Col:</strong> 20</p>
-            <p><strong>経験値:</strong> 50</p>
-            <p><strong>ドロップ:</strong> Metal Scraps, Quartanier</p>
-        </div>
-
-    </section>
+        <p><strong>Col:</strong> 20</p>
+        <p><strong>経験値:</strong> 50</p>
+        <p><strong>Drop:</strong> Metal Scraps, Quartanier</p>
+    </aside>
 
 
-    <!-- 階層 -->
-    <section class="floor-section">
+    <!-- 右 -->
+    <main class="monster-main">
 
-        <div class="floor-list">
-
-            <button class="floor-btn"
-            onclick="changeMap('map/Frenzy Boar_floor1.png')">
-            1階層
-            </button>
-
-            <button class="floor-btn"
-            onclick="changeMap(null)">
-            2階層
-            </button>
-
-        </div>
-
-        <div class="map-box" id="mapBox">
-            マップを選択
-        </div>
-
-    </section>
-
-
-    <!-- 攻撃 -->
-    <section>
-        <h2>モンスターの攻撃方法</h2>
-
-        <div class="attack">
-
-            <div class="attack-header"
-            onclick="toggle(this)">
-            ➤頭突き-1
-            </div>
-
-            <div class="attack-content">
-                <p>プレイヤーが近づくと吹き飛ばす攻撃を行う。後方へノックバックあり。</p>
-
-                <video controls>
-                    <source src="video/Frenzy Boar/Frenzy Boar_atk1.mp4">
-                </video>
-            </div>
-
+        <!-- タブ -->
+        <div class="tabs">
+            <button onclick="showTab('info')">基本情報</button>
+            <button onclick="showTab('map')">出現マップ</button>
+            <button onclick="showTab('attack')">攻撃</button>
         </div>
 
 
-        <div class="attack">
+        <!-- 基本 -->
+        <section id="info" class="tab-content active">
+            <h2>モンスター詳細</h2>
+            <p>
+                狂暴化したイノシシ型モンスター。<br>
+                近距離の吹き飛ばし攻撃と高速突進を行う。
+            </p>
+        </section>
 
-            <div class="attack-header"
-            onclick="toggle(this)">
-            ➤頭突き-2
+
+        <!-- マップ -->
+        <section id="map" class="tab-content">
+
+            <div class="floor-list">
+                <button class="floor-btn"
+                onclick="changeMap('map/Frenzy Boar_floor1.png',this)">
+                    1階層
+                </button>
+
+                <button class="floor-btn"
+                onclick="changeMap(null,this)">
+                    2階層
+                </button>
             </div>
 
-            <div class="attack-content">
-                <p>一歩前に出て突進する攻撃。上方向へノックバックあり。</p>
+            <div class="map-box" id="mapBox">
+                マップを選択
+            </div>
 
-                <video controls>
-                    <source src="video/Frenzy Boar/Frenzy Boar_atk2.mp4">
-                </video>
+        </section>
+
+
+        <!-- 攻撃 -->
+        <section id="attack" class="tab-content">
+
+            <div class="attack">
+                <div class="attack-header" onclick="toggle(this)">
+                    ➤ 頭突き-1
+                </div>
+
+                <div class="attack-content">
+                    <p>プレイヤーが近づくと吹き飛ばす。</p>
+
+                    <video controls>
+                        <source src="video/Frenzy Boar/Frenzy Boar_atk1.mp4">
+                    </video>
+                </div>
             </div>
 
 
-             <div class="attack">
+            <div class="attack">
+                <div class="attack-header" onclick="toggle(this)">
+                    ➤ 頭突き-2
+                </div>
 
-            <div class="attack-header"
-            onclick="toggle(this)">
-            ➤後退 → 突進
+                <div class="attack-content">
+                    <p>一歩前に出て突進する。</p>
+
+                    <video controls>
+                        <source src="video/Frenzy Boar/Frenzy Boar_atk2.mp4">
+                    </video>
+                </div>
             </div>
 
-            <div class="attack-content">
-                <p>一度距離を取り、振り向いてから突進する攻撃。</p>
 
-                <video controls>
-                    <source src="video/Frenzy Boar/Frenzy Boar_atk3.mp4">
-                </video>
+            <div class="attack">
+                <div class="attack-header" onclick="toggle(this)">
+                    ➤ 後退 → 突進
+                </div>
+
+                <div class="attack-content">
+                    <p>距離を取り突進する。</p>
+
+                    <video controls>
+                        <source src="video/Frenzy Boar/Frenzy Boar_atk3.mp4">
+                    </video>
+                </div>
             </div>
 
-        </div>
 
+            <div class="attack">
+                <div class="attack-header" onclick="toggle(this)">
+                    ➤ 突進
+                </div>
 
-        <div class="attack">
+                <div class="attack-content">
+                    <p>遠距離時に高速接近。</p>
 
-            <div class="attack-header"
-            onclick="toggle(this)">
-            ➤突進
+                    <video controls>
+                        <source src="video/Frenzy Boar/Frenzy Boar_atk4.mp4">
+                    </video>
+                </div>
             </div>
 
-            <div class="attack-content">
-                <p>プレイヤーと距離があると突進してくる攻撃。</p>
+        </section>
 
-                <video controls>
-                    <source src="video/Frenzy Boar/Frenzy Boar_atk4.mp4">
-                </video>
-            </div>
-
-            
-        </div>
-
-    </section>
+    </main>
 
 </div>
 
 </section>
 </div>
 
-<script src="../../../assets/ui/layout.js"></script>
 <script src="detail.js"></script>
 
 <script>
