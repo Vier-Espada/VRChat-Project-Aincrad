@@ -2,60 +2,101 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
 <title>Frenzy Boar</title>
 
-<link rel="stylesheet" href="../../../assets/ui/layout.css">
-<link rel="stylesheet" href="detail.css">
+<link rel="stylesheet"
+href="../../../assets/ui/layout.css">
+
+<link rel="stylesheet"
+href="detail.css">
 
 <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="dark">
+
+<body>
 
 <div class="page-content">
+
 <section class="monster-page">
 
-<h1 class="page-title">Frenzy Boar</h1>
+<h1 class="page-title">
+    Frenzy Boar
+</h1>
 
 <div class="monster-layout">
 
     <!-- 左 -->
     <aside class="monster-side">
+
         <img src="../monsterpng/Frenzy Boar.png">
 
         <h2>Frenzy Boar</h2>
 
         <p><strong>Col:</strong> 20</p>
         <p><strong>経験値:</strong> 50</p>
-        <p><strong>Drop:</strong> Metal Scraps, Quartanier</p>
+        <p><strong>Drop:</strong>
+        Metal Scraps, Quartanier</p>
+
     </aside>
 
 
     <!-- 右 -->
     <main class="monster-main">
 
+        <!-- 戻る -->
+        <div class="top-bar">
+
+            <button class="back-btn"
+            onclick="history.back()">
+
+                ← 戻る
+
+            </button>
+
+        </div>
+
+
         <!-- タブ -->
         <div class="tabs">
-            <button onclick="showTab('info')">基本情報</button>
-            <button onclick="showTab('map')">出現マップ</button>
-            <button onclick="showTab('attack')">攻撃</button>
+
+            <button onclick="showTab('info')">
+                基本情報
+            </button>
+
+            <button onclick="showTab('map')">
+                出現マップ
+            </button>
+
+            <button onclick="showTab('attack')">
+                攻撃
+            </button>
+
         </div>
 
 
         <!-- 基本 -->
-        <section id="info" class="tab-content active">
+        <section id="info"
+        class="tab-content active">
+
             <h2>モンスター詳細</h2>
+
             <p>
                 初心者が戦いの練習をするのに最適なモンスター。<br>
                 ノックバックありの攻撃と突進を行う。
             </p>
+
         </section>
 
 
         <!-- マップ -->
-        <section id="map" class="tab-content">
+        <section id="map"
+        class="tab-content">
 
             <div class="floor-list">
+
                 <button class="floor-btn"
                 onclick="changeMap('map/Frenzy Boar_floor1.png',this)">
                     1階層
@@ -65,75 +106,112 @@
                 onclick="changeMap(null,this)">
                     2階層
                 </button>
+
             </div>
 
-            <div class="map-box" id="mapBox">
+            <div class="map-box"
+            id="mapBox">
+
                 マップを選択
+
             </div>
 
         </section>
 
 
         <!-- 攻撃 -->
-        <section id="attack" class="tab-content">
+        <section id="attack"
+        class="tab-content">
 
             <div class="attack">
-                <div class="attack-header" onclick="toggle(this)">
+
+                <div class="attack-header"
+                onclick="toggle(this)">
                     ➤ 頭突き-1
                 </div>
 
                 <div class="attack-content">
-                    <p>頭突き攻撃をしてくる。後方へノックバックあり。</p>
+
+                    <p>
+                        頭突き攻撃をしてくる。<br>
+                        後方へノックバックあり。
+                    </p>
 
                     <video controls>
                         <source src="video/Frenzy Boar/Frenzy Boar_atk1.mp4">
                     </video>
+
                 </div>
+
             </div>
 
 
             <div class="attack">
-                <div class="attack-header" onclick="toggle(this)">
+
+                <div class="attack-header"
+                onclick="toggle(this)">
                     ➤ 頭突き-2
                 </div>
 
                 <div class="attack-content">
-                    <p>一歩前に出て頭突き攻撃をしてくる。上方にノックバックあり。</p>
+
+                    <p>
+                        一歩前に出て頭突き攻撃。<br>
+                        上方へノックバックあり。
+                    </p>
 
                     <video controls>
                         <source src="video/Frenzy Boar/Frenzy Boar_atk2.mp4">
                     </video>
+
                 </div>
+
             </div>
 
 
             <div class="attack">
-                <div class="attack-header" onclick="toggle(this)">
+
+                <div class="attack-header"
+                onclick="toggle(this)">
                     ➤ 後退 → 突進
                 </div>
 
                 <div class="attack-content">
-                    <p>距離を取った後に振り返って突進する。後方にノックバックあり。</p>
+
+                    <p>
+                        距離を取った後に振り返って突進。<br>
+                        後方ノックバックあり。
+                    </p>
 
                     <video controls>
                         <source src="video/Frenzy Boar/Frenzy Boar_atk3.mp4">
                     </video>
+
                 </div>
+
             </div>
 
 
             <div class="attack">
-                <div class="attack-header" onclick="toggle(this)">
+
+                <div class="attack-header"
+                onclick="toggle(this)">
                     ➤ 突進
                 </div>
 
                 <div class="attack-content">
-                    <p>プレイヤーが離れると突進してくる。後方へノックバックあり。</p>
+
+                    <p>
+                        プレイヤーが離れると突進。<br>
+                        後方ノックバックあり。
+                    </p>
 
                     <video controls>
                         <source src="video/Frenzy Boar/Frenzy Boar_atk4.mp4">
                     </video>
+
                 </div>
+
             </div>
 
         </section>
@@ -144,7 +222,7 @@
 
 </section>
 </div>
-    
+
 <script src="../../../assets/ui/layout.js"></script>
 <script src="detail.js"></script>
 
