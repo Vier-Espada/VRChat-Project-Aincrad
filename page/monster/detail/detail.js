@@ -1,14 +1,27 @@
-function toggle(el){
-    const content =
-    el.nextElementSibling;
+function showTab(id){
 
-    content.style.display =
-    content.style.display === "block"
-    ? "none"
-    : "block";
+    document
+    .querySelectorAll(".tab-content")
+    .forEach(tab=>tab.classList.remove("active"));
+
+    document
+    .getElementById(id)
+    .classList.add("active");
 }
 
-function changeMap(map){
+
+function toggle(el){
+    el.parentElement.classList.toggle("open");
+}
+
+
+function changeMap(map,btn){
+
+    document
+    .querySelectorAll(".floor-btn")
+    .forEach(b=>b.classList.remove("active"));
+
+    btn.classList.add("active");
 
     const box =
     document.getElementById("mapBox");
