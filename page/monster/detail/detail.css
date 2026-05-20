@@ -1,8 +1,19 @@
 body{
     margin:0;
     font-family:sans-serif;
+    transition:.25s;
+}
+
+/* Theme */
+
+body.dark{
     background:#111;
     color:white;
+}
+
+body.light{
+    background:#f5f5f5;
+    color:#111;
 }
 
 .page-content{
@@ -17,18 +28,32 @@ body{
     gap:30px;
 }
 
+/* Cards */
+
+body.dark .monster-side,
+body.dark .monster-main{
+    background:#1a1a1a;
+    box-shadow:0 0 18px rgba(77,166,255,.12);
+}
+
+body.light .monster-side,
+body.light .monster-main{
+    background:white;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+
 .monster-side,
 .monster-main{
-    background:#1a1a1a;
     border-radius:16px;
     padding:25px;
-    box-shadow:0 0 18px rgba(77,166,255,.12);
 }
 
 .monster-side img{
     width:100%;
     border-radius:14px;
 }
+
+/* Tabs */
 
 .tabs{
     display:flex;
@@ -42,14 +67,40 @@ body{
     border:none;
     border-radius:12px;
     cursor:pointer;
-    background:#222;
-    color:white;
     transition:.25s;
 }
 
-.tabs button:hover,
-.floor-btn:hover{
+/* Dark Buttons */
+
+body.dark .tabs button,
+body.dark .floor-btn,
+body.dark .attack,
+body.dark .map-box{
+    background:#222;
+    color:white;
+}
+
+body.dark .tabs button:hover,
+body.dark .floor-btn:hover,
+body.dark .attack-header:hover{
     background:#333;
+}
+
+/* Light Buttons */
+
+body.light .tabs button,
+body.light .floor-btn,
+body.light .attack,
+body.light .map-box{
+    background:white;
+    color:#111;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+body.light .tabs button:hover,
+body.light .floor-btn:hover,
+body.light .attack-header:hover{
+    background:#eee;
 }
 
 .floor-btn.active{
@@ -64,6 +115,8 @@ body{
     display:block;
 }
 
+/* Map */
+
 .floor-list{
     display:flex;
     gap:10px;
@@ -75,7 +128,6 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    background:#222;
     border-radius:16px;
     padding:20px;
 }
@@ -86,8 +138,9 @@ body{
     border-radius:14px;
 }
 
+/* Attack */
+
 .attack{
-    background:#222;
     border-radius:14px;
     margin-bottom:18px;
     overflow:hidden;
@@ -115,6 +168,8 @@ video{
     width:100%;
     border-radius:12px;
 }
+
+/* Mobile */
 
 @media(max-width:900px){
 
