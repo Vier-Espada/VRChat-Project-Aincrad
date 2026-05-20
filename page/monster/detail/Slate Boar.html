@@ -21,6 +21,7 @@
 
     <!-- 左 -->
     <aside class="monster-side">
+
         <img src="../monsterpng/Slate Boar.png">
 
         <h2>Slate Boar</h2>
@@ -28,13 +29,21 @@
         <p><strong>Col:</strong> 50</p>
         <p><strong>経験値:</strong> 75</p>
         <p><strong>Drop:</strong> Metal Scraps, Quartanier</p>
+
     </aside>
 
 
     <!-- 右 -->
     <main class="monster-main">
 
-        <!-- タブ -->
+        <div class="top-bar">
+            <button class="back-btn"
+            onclick="history.back()">
+                ← 戻る
+            </button>
+        </div>
+
+
         <div class="tabs">
             <button onclick="showTab('info')">基本情報</button>
             <button onclick="showTab('map')">出現マップ</button>
@@ -43,19 +52,25 @@
 
 
         <!-- 基本 -->
-        <section id="info" class="tab-content active">
+        <section id="info"
+        class="tab-content active">
+
             <h2>モンスター詳細</h2>
+
             <p>
                 初心者が戦いの練習をするのに最適なモンスター。<br>
                 ノックバックありの攻撃と突進を行う。
             </p>
+
         </section>
 
 
         <!-- マップ -->
-        <section id="map" class="tab-content">
+        <section id="map"
+        class="tab-content">
 
             <div class="floor-list">
+
                 <button class="floor-btn"
                 onclick="changeMap('map/Slate Boar_floor1.png',this)">
                     1階層
@@ -65,9 +80,11 @@
                 onclick="changeMap(null,this)">
                     2階層
                 </button>
+
             </div>
 
-            <div class="map-box" id="mapBox">
+            <div class="map-box"
+            id="mapBox">
                 マップを選択
             </div>
 
@@ -75,65 +92,78 @@
 
 
         <!-- 攻撃 -->
-        <section id="attack" class="tab-content">
+        <section id="attack"
+        class="tab-content">
 
             <div class="attack">
-                <div class="attack-header" onclick="toggle(this)">
+
+                <div class="attack-header"
+                onclick="toggle(this)">
                     ➤ 頭突き-1
                 </div>
 
                 <div class="attack-content">
-                    <p>頭突き攻撃をしてくる。後方へノックバックあり。</p>
+                    <p>頭突き攻撃。後方ノックバック。</p>
 
                     <video controls>
                         <source src="video/Slate Boar/Slate Boar_atk1.mp4">
                     </video>
                 </div>
+
             </div>
 
 
             <div class="attack">
-                <div class="attack-header" onclick="toggle(this)">
+
+                <div class="attack-header"
+                onclick="toggle(this)">
                     ➤ 頭突き-2
                 </div>
 
                 <div class="attack-content">
-                    <p>一歩前に出て頭突き攻撃をしてくる。上方にノックバックあり。</p>
+                    <p>前進して頭突き。上方ノックバック。</p>
 
                     <video controls>
                         <source src="video/Slate Boar/Slate Boar_atk2.mp4">
                     </video>
                 </div>
+
             </div>
 
 
             <div class="attack">
-                <div class="attack-header" onclick="toggle(this)">
+
+                <div class="attack-header"
+                onclick="toggle(this)">
                     ➤ 後退 → 突進
                 </div>
 
                 <div class="attack-content">
-                    <p>距離を取った後に振り返って突進する。後方にノックバックあり。</p>
+                    <p>距離を取って突進。</p>
 
                     <video controls>
                         <source src="video/Slate Boar/Slate Boar_atk3.mp4">
                     </video>
                 </div>
+
             </div>
 
 
             <div class="attack">
-                <div class="attack-header" onclick="toggle(this)">
+
+                <div class="attack-header"
+                onclick="toggle(this)">
                     ➤ 突進
                 </div>
 
                 <div class="attack-content">
-                    <p>プレイヤーが離れると突進してくる。後方へノックバックあり。</p>
+                    <p>遠距離時に高速接近。</p>
 
                     <video controls>
                         <source src="video/Slate Boar/Slate Boar_atk4.mp4">
                     </video>
                 </div>
+
             </div>
 
         </section>
