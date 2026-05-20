@@ -224,3 +224,17 @@ video{
 }
 
 }
+
+a,
+a:visited{
+    color:#00cc66;
+    text-decoration:underline;
+}
+
+a:hover{
+    color:#33dd88;
+}
+
+a:active{
+    color:#00cc66;
+}
