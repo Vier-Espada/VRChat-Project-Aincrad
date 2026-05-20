@@ -104,6 +104,8 @@ body.light .back-btn:hover{
     transition:.25s;
 }
 
+/* Dark */
+
 body.dark .tabs button,
 body.dark .floor-btn,
 body.dark .attack,
@@ -118,6 +120,8 @@ body.dark .attack-header:hover{
     background:#333;
 }
 
+/* Light */
+
 body.light .tabs button,
 body.light .floor-btn,
 body.light .attack,
@@ -131,6 +135,14 @@ body.light .tabs button:hover,
 body.light .floor-btn:hover,
 body.light .attack-header:hover{
     background:#eee;
+}
+
+/* Active Tab */
+
+.tabs button.active{
+    background:#4da6ff !important;
+    color:white !important;
+    box-shadow:0 0 14px rgba(77,166,255,.45);
 }
 
 .floor-btn.active{
@@ -198,6 +210,8 @@ video{
     width:100%;
     border-radius:12px;
 }
+
+/* Mobile */
 
 @media(max-width:900px){
 
