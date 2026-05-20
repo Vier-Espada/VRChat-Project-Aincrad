@@ -78,7 +78,7 @@
   {
     "question":"モンスターのレアドロップってある？",
 
-    "answer":"あります。"
+    "answer":"あります。<br> <a class=\"help-link\" href=\"../monster/monster.html\">モンスター一覧</a>から確認できます。"
   },
 
   {
