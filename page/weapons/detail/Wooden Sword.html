@@ -6,7 +6,6 @@
 
 <title>Wooden Sword</title>
 
-
 <link rel="stylesheet" href="/VRChat-Project-Aincrad/assets/ui/layout.css">
 <link rel="stylesheet" href="/VRChat-Project-Aincrad/page/weapons/detail/detail.css">
 
@@ -19,19 +18,18 @@
 
   <section class="weapon-detail">
 
-
+   
     <button class="back-btn" onclick="history.back()">
       ← 戻る
     </button>
 
     <div class="weapon-grid">
 
-     
+  
       <div class="weapon-left">
 
         <h1 class="weapon-name">Wooden Sword</h1>
 
-       
         <div class="weapon-image">
           <img src="../weaponpng/Wooden Sword.png"
                alt="Wooden Sword">
@@ -39,13 +37,18 @@
 
       </div>
 
-   
+  
       <div class="weapon-right">
 
-      
+       
         <div class="tabs">
-          <button class="tab active" onclick="showTab('info')">基本情報</button>
-          <button class="tab" onclick="showTab('howto')">入手方法</button>
+          <button class="tab active" onclick="showTab('info', this)">
+            基本情報
+          </button>
+
+          <button class="tab" onclick="showTab('howto', this)">
+            入手方法
+          </button>
         </div>
 
       
@@ -72,13 +75,10 @@
         <div id="howto" class="tab-content">
           <ul>
             <li>ショップ</li>
-            test
             <li>クエスト</li>
-            なし
             <li>宝箱</li>
-            test
             <li>モンスタードロップ</li>
-            なし
+            <li>その他</li>
           </ul>
         </div>
 
@@ -92,7 +92,6 @@
 
 
 <script src="/VRChat-Project-Aincrad/assets/ui/layout.js"></script>
-
 <script src="/VRChat-Project-Aincrad/page/weapons/detail/detail.js"></script>
 
 <script>
