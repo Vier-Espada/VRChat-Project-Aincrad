@@ -6,6 +6,8 @@ function showTab(tabId, btn) {
   contents.forEach(c => c.classList.remove("active"));
   tabs.forEach(t => t.classList.remove("active"));
 
-  document.getElementById(tabId).classList.add("active");
-  btn.classList.add("active");
+  const target = document.getElementById(tabId);
+  if (target) target.classList.add("active");
+
+  if (btn) btn.classList.add("active");
 }
