@@ -111,7 +111,7 @@
       "エリア": ["1階層"],
       "受注場所": ["Cliffside Plaza"],
       "推奨レベル": ["1Lv"],
-      "種類": ["収集"]
+      "種類": ["討伐"]
     },
     "image": "./questtoppng/Boar Huntin' Time.png",
     "col": 200,
