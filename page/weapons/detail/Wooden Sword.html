@@ -6,8 +6,8 @@
 
 <title>Wooden Sword</title>
 
-<link rel="stylesheet" href="../../assets/ui/layout.css">
-<link rel="stylesheet" href="detail.css">
+<link rel="stylesheet" href="/VRChat-Project-Aincrad/assets/ui/layout.css">
+<link rel="stylesheet" href="/VRChat-Project-Aincrad/page/weapons/detail/detail.css">
 
 <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -18,21 +18,22 @@
 
   <section class="weapon-page">
 
-    <!-- タイトル -->
+
     <h1 class="page-title">Wooden Sword</h1>
 
-    <!-- 画像 -->
+   
     <div class="weapon-image">
-      <img src="WoodenSword.png" alt="Wooden Sword">
+      <img src="/VRChat-Project-Aincrad/assets/images/weapons/WoodenSword.png"
+           alt="Wooden Sword">
     </div>
 
-    <!-- タブ -->
+
     <div class="tabs">
       <button class="tab active" onclick="showTab('info')">基本情報</button>
       <button class="tab" onclick="showTab('howto')">入手方法</button>
     </div>
 
-    <!-- 基本情報 -->
+
     <div id="info" class="tab-content active">
       <table>
         <tr><th>武器名</th><td>Wooden Sword</td></tr>
@@ -41,7 +42,7 @@
         <tr><th>買値</th><td>50 Col</td></tr>
         <tr><th>売値</th><td>25 Col</td></tr>
         <tr><th>攻撃方法</th><td>Blunt</td></tr>
-        <tr><th>武器の種類</th><td>One Handed/Sword</td></tr>
+        <tr><th>武器の種類</th><td>One Handed / Sword</td></tr>
         <tr><th>長さ</th><td>0.78m</td></tr>
         <tr><th>重さ</th><td>1</td></tr>
         <tr><th>Strength</th><td>0</td></tr>
@@ -52,7 +53,7 @@
       </table>
     </div>
 
-    <!-- 入手方法 -->
+
     <div id="howto" class="tab-content">
       <ul>
         <li>ショップ</li>
@@ -67,11 +68,14 @@
 
 </div>
 
-<script src="../../assets/ui/layout.js"></script>
-<script src="detail.js"></script>
+
+<script src="/VRChat-Project-Aincrad/assets/ui/layout.js"></script>
+
+
+<script src="/VRChat-Project-Aincrad/page/weapons/detail/detail.js"></script>
 
 <script>
-  lucide.createIcons();
+lucide.createIcons();
 </script>
 
 </body>
