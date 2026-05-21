@@ -16,62 +16,76 @@
 
 <div class="page-content">
 
-  <section class="weapon-page">
+  <section class="weapon-detail">
 
 
-    <h1 class="page-title">Wooden Sword</h1>
+    <button class="back-btn" onclick="history.back()">
+      ← Back
+    </button>
 
-   
-    <div class="weapon-image">
-      <img src="/VRChat-Project-Aincrad/assets/images/weapons/WoodenSword.png"
-           alt="Wooden Sword">
-    </div>
+    <div class="weapon-grid">
 
 
-    <div class="tabs">
-      <button class="tab active" onclick="showTab('info')">基本情報</button>
-      <button class="tab" onclick="showTab('howto')">入手方法</button>
-    </div>
+      <div class="weapon-left">
+
+        <h1 class="weapon-name">Wooden Sword</h1>
+
+        <div class="weapon-image">
+          <img src="/VRChat-Project-Aincrad/assets/images/weapons/WoodenSword.png"
+               alt="Wooden Sword">
+        </div>
+
+      </div>
 
 
-    <div id="info" class="tab-content active">
-      <table>
-        <tr><th>武器名</th><td>Wooden Sword</td></tr>
-        <tr><th>必要なレベル</th><td>0</td></tr>
-        <tr><th>攻撃力</th><td>3.25-5</td></tr>
-        <tr><th>買値</th><td>50 Col</td></tr>
-        <tr><th>売値</th><td>25 Col</td></tr>
-        <tr><th>攻撃方法</th><td>Blunt</td></tr>
-        <tr><th>武器の種類</th><td>One Handed / Sword</td></tr>
-        <tr><th>長さ</th><td>0.78m</td></tr>
-        <tr><th>重さ</th><td>1</td></tr>
-        <tr><th>Strength</th><td>0</td></tr>
-        <tr><th>Agility</th><td>0</td></tr>
-        <tr><th>耐久値</th><td>なし</td></tr>
-        <tr><th>トレード</th><td>可能</td></tr>
-        <tr><th>スキン</th><td>Normal</td></tr>
-      </table>
-    </div>
+      <div class="weapon-right">
 
+ 
+        <div class="tabs">
+          <button class="tab active" onclick="showTab('info')">基本情報</button>
+          <button class="tab" onclick="showTab('howto')">入手方法</button>
+        </div>
 
-    <div id="howto" class="tab-content">
-      <ul>
-        <li>ショップ</li>
-        <li>クエスト</li>
-        <li>宝箱</li>
-        <li>モンスタードロップ</li>
-        <li>その他</li>
-      </ul>
+    
+        <div id="info" class="tab-content active">
+          <table>
+            <tr><th>武器名</th><td>Wooden Sword</td></tr>
+            <tr><th>必要なレベル</th><td>0</td></tr>
+            <tr><th>攻撃力</th><td>3.25-5</td></tr>
+            <tr><th>買値</th><td>50 Col</td></tr>
+            <tr><th>売値</th><td>25 Col</td></tr>
+            <tr><th>攻撃方法</th><td>Blunt</td></tr>
+            <tr><th>武器の種類</th><td>One Handed / Sword</td></tr>
+            <tr><th>長さ</th><td>0.78m</td></tr>
+            <tr><th>重さ</th><td>1</td></tr>
+            <tr><th>Strength</th><td>0</td></tr>
+            <tr><th>Agility</th><td>0</td></tr>
+            <tr><th>耐久値</th><td>なし</td></tr>
+            <tr><th>トレード</th><td>可能</td></tr>
+            <tr><th>スキン</th><td>Normal</td></tr>
+          </table>
+        </div>
+
+        
+        <div id="howto" class="tab-content">
+          <ul>
+            <li>ショップ</li>
+            <li>クエスト</li>
+            <li>宝箱</li>
+            <li>モンスタードロップ</li>
+            <li>その他</li>
+          </ul>
+        </div>
+
+      </div>
+
     </div>
 
   </section>
 
 </div>
 
-
 <script src="/VRChat-Project-Aincrad/assets/ui/layout.js"></script>
-
-
 <script src="/VRChat-Project-Aincrad/page/weapons/detail/detail.js"></script>
 
 <script>
