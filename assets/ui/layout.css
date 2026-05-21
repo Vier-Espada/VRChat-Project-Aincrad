@@ -3,6 +3,7 @@
   --text:#ffffff;
   --card:#0f131a;
   --border:rgba(255,255,255,0.08);
+  --topbar-height:64px;
 }
 
 /* ===== LIGHT ===== */
@@ -19,10 +20,16 @@ body.light{
 
 body{
   margin:0;
+
   background:var(--bg);
   color:var(--text);
+
   font-family:Arial,sans-serif;
-  transition: background 0.3s ease, color 0.3s ease;
+
+  /* ★重要：ヘッダー分の余白 */
+  padding-top:var(--topbar-height);
+
+  transition:background 0.3s ease, color 0.3s ease;
 }
 
 /* ===== TOPBAR ===== */
@@ -30,8 +37,9 @@ body{
   position:fixed;
   top:0;
   left:0;
+
   width:100%;
-  height:64px;
+  height:var(--topbar-height);
 
   display:flex;
   align-items:center;
@@ -41,11 +49,12 @@ body{
   z-index:9999;
 
   backdrop-filter:blur(12px);
+
   background:rgba(5,7,11,0.72);
   border-bottom:1px solid var(--border);
 }
 
-/* light topbar */
+/* light mode topbar */
 body.light .topbar{
   background:rgba(255,255,255,0.85);
 }
@@ -145,7 +154,7 @@ body.light .topbar{
 
   outline:none;
 
-  transition: width 0.25s ease, box-shadow 0.25s ease;
+  transition:width 0.25s ease, box-shadow 0.25s ease;
 }
 
 #search-bar:focus{
