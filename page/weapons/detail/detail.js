@@ -1,4 +1,5 @@
-function showTab(tabId) {
+function showTab(tabId, btn) {
+
   const contents = document.querySelectorAll(".tab-content");
   const tabs = document.querySelectorAll(".tab");
 
@@ -6,5 +7,5 @@ function showTab(tabId) {
   tabs.forEach(t => t.classList.remove("active"));
 
   document.getElementById(tabId).classList.add("active");
-  event.target.classList.add("active");
+  btn.classList.add("active");
 }
