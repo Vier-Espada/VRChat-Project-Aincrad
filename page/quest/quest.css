@@ -4,13 +4,21 @@
 
 body{
   margin:0;
-  padding:20px;
 
   font-family:Arial;
 
   background:var(--bg);
   color:var(--text);
 }
+
+/* ページ全体の余白はここで管理 */
+.page-content{
+  padding:20px;
+}
+
+/* =========================
+   TITLE
+========================= */
 
 h1{
   margin-bottom:10px;
@@ -57,7 +65,7 @@ input:focus{
   margin:5px 0;
 
   font-size:14px;
-  color:var(--text-muted);
+  color:var(--text-muted, rgba(255,255,255,0.6));
 }
 
 .tag{
@@ -85,7 +93,6 @@ input:focus{
 
 .tag.active{
   background:rgba(120,180,255,0.15);
-  color:var(--text);
   border-color:rgba(120,180,255,0.45);
 }
 
@@ -131,7 +138,7 @@ input:focus{
 
 .stats{
   font-size:12px;
-  color:var(--text-muted);
+  color:var(--text-muted, rgba(255,255,255,0.6));
 }
 
 /* =========================
@@ -140,7 +147,7 @@ input:focus{
 
 @media (max-width:768px){
 
-  body{
+  .page-content{
     padding:10px;
   }
 
