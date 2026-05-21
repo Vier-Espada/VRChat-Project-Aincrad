@@ -8,7 +8,7 @@
       "推奨レベル": ["1Lv"],
       "種類": ["収集"]
     },
-    "image": "../../assets/quest/Green Herb Gathering.png",
+    "image": "./questtoppng/Green Herb Gathering.png",
     "col": 50,
     "exp": 100,
     "guildExp": 0,
@@ -23,7 +23,7 @@
       "推奨レベル": ["1Lv"],
       "種類": ["収集"]
     },
-    "image": "../../assets/quest/The Mysterious Flower.png",
+    "image": "./questtoppng/The Mysterious Flower.png",
     "col": 1750,
     "exp": 450,
     "guildExp": 10,
@@ -38,7 +38,7 @@
       "推奨レベル": ["3Lv"],
       "種類": ["討伐"]
     },
-    "image": "../../assets/quest/Stella's Request.png",
+    "image": "./questtoppng/Stella's Request.png",
     "col": 300,
     "exp": 100,
     "guildExp": 0,
@@ -53,7 +53,7 @@
       "推奨レベル": ["1Lv"],
       "種類": ["収集"]
     },
-    "image": "../../assets/quest/Ester's Herb Supply.png",
+    "image": "./questtoppng/Ester's Herb Supply.png",
     "col": 400,
     "exp": 325,
     "guildExp": 0,
@@ -68,7 +68,7 @@
       "推奨レベル": ["1Lv"],
       "種類": ["収集"]
     },
-    "image": "../../assets/quest/Being Neighborly.png",
+    "image": "./questtoppng/Being Neighborly.png",
     "col": 350,
     "exp": 100,
     "guildExp": 0,
@@ -83,7 +83,7 @@
       "推奨レベル": ["1Lv"],
       "種類": ["収集"]
     },
-    "image": "../../assets/quest/Depression's 2nd Wind?.png",
+    "image": "./questtoppng/Depression's 2nd Wind?.png",
     "col": 500,
     "exp": 200,
     "guildExp": 0,
@@ -98,7 +98,7 @@
       "推奨レベル": ["1Lv"],
       "種類": ["収集"]
     },
-    "image": "../../assets/quest/Collect The 3 Herbs.png",
+    "image": "./questtoppng/Collect The 3 Herbs.png",
     "col": 420,
     "exp": 750,
     "guildExp": 10,
@@ -113,7 +113,7 @@
       "推奨レベル": ["1Lv"],
       "種類": ["収集"]
     },
-    "image": "../../assets/quest/Boar Huntin' Time.png",
+    "image": "./questtoppng/Boar Huntin' Time.png",
     "col": 200,
     "exp": 75,
     "guildExp": 0,
