@@ -1,61 +1,78 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>Wooden Sword</title>
-  <link rel="stylesheet" href="detail.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Wooden Sword</title>
+
+<link rel="stylesheet" href="../../assets/ui/layout.css">
+<link rel="stylesheet" href="detail.css">
+
+<script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
 
-<div class="container">
+<div class="page-content">
 
-  <!-- 武器名 -->
-  <h1 class="weapon-name">Wooden Sword</h1>
+  <section class="weapon-page">
 
-  <!-- 武器画像 -->
-  <div class="weapon-image">
-    <img src="WoodenSword.png" alt="Wooden Sword">
-  </div>
+    <!-- タイトル -->
+    <h1 class="page-title">Wooden Sword</h1>
 
-  <!-- タブ -->
-  <div class="tabs">
-    <button class="tab active" onclick="showTab('info')">基本情報</button>
-    <button class="tab" onclick="showTab('howto')">入手方法</button>
-  </div>
+    <!-- 画像 -->
+    <div class="weapon-image">
+      <img src="WoodenSword.png" alt="Wooden Sword">
+    </div>
 
-  <!-- 基本情報 -->
-  <div id="info" class="tab-content active">
-    <table>
-      <tr><th>武器名</th><td>Wooden Sword</td></tr>
-      <tr><th>必要なレベル</th><td>0</td></tr>
-      <tr><th>攻撃力</th><td>3.25-5</td></tr>
-      <tr><th>買値</th><td>50 Col</td></tr>
-      <tr><th>売値</th><td>25 Col</td></tr>
-      <tr><th>攻撃方法</th><td>Blunt</td></tr>
-      <tr><th>武器の種類</th><td>One Handed/Sword</td></tr>
-      <tr><th>長さ</th><td>平均的-0.78m</td></tr>
-      <tr><th>重さ</th><td>1</td></tr>
-      <tr><th>Strength</th><td>0</td></tr>
-      <tr><th>Agility</th><td>0</td></tr>
-      <tr><th>耐久値</th><td>なし</td></tr>
-      <tr><th>トレード</th><td>可能</td></tr>
-      <tr><th>スキン</th><td>Normal</td></tr>
-    </table>
-  </div>
+    <!-- タブ -->
+    <div class="tabs">
+      <button class="tab active" onclick="showTab('info')">基本情報</button>
+      <button class="tab" onclick="showTab('howto')">入手方法</button>
+    </div>
 
-  <!-- 入手方法 -->
-  <div id="howto" class="tab-content">
-    <ul>
-      <li>ショップ</li>
-      <li>クエスト</li>
-      <li>宝箱</li>
-      <li>モンスタードロップ</li>
-      <li>その他</li>
-    </ul>
-  </div>
+    <!-- 基本情報 -->
+    <div id="info" class="tab-content active">
+      <table>
+        <tr><th>武器名</th><td>Wooden Sword</td></tr>
+        <tr><th>必要なレベル</th><td>0</td></tr>
+        <tr><th>攻撃力</th><td>3.25-5</td></tr>
+        <tr><th>買値</th><td>50 Col</td></tr>
+        <tr><th>売値</th><td>25 Col</td></tr>
+        <tr><th>攻撃方法</th><td>Blunt</td></tr>
+        <tr><th>武器の種類</th><td>One Handed/Sword</td></tr>
+        <tr><th>長さ</th><td>0.78m</td></tr>
+        <tr><th>重さ</th><td>1</td></tr>
+        <tr><th>Strength</th><td>0</td></tr>
+        <tr><th>Agility</th><td>0</td></tr>
+        <tr><th>耐久値</th><td>なし</td></tr>
+        <tr><th>トレード</th><td>可能</td></tr>
+        <tr><th>スキン</th><td>Normal</td></tr>
+      </table>
+    </div>
+
+    <!-- 入手方法 -->
+    <div id="howto" class="tab-content">
+      <ul>
+        <li>ショップ</li>
+        <li>クエスト</li>
+        <li>宝箱</li>
+        <li>モンスタードロップ</li>
+        <li>その他</li>
+      </ul>
+    </div>
+
+  </section>
 
 </div>
 
+<script src="../../assets/ui/layout.js"></script>
 <script src="detail.js"></script>
+
+<script>
+  lucide.createIcons();
+</script>
+
 </body>
 </html>
