@@ -18,6 +18,14 @@
     "answer":"Ver1.6時点で10Lvまでです。"
   },
 
+  ,
+  
+  {
+    "question":"1レベル上げるごとに必要な経験値は？",
+
+    "answer":"1Lv→2Lv 300<br>2Lv→3Lv 700<br>3Lv→4Lv 2110<br>4Lv→5Lv 3780<br>5Lv→6Lv 6080<br>6Lv→7Lv 9080<br>7Lv→8Lv 12860<br>8Lv→9Lv 17500<br>9Lv→10Lv 23090<br>合計 75500 EXP必要"
+  },
+
   {
     "question":"セーブは手動以外ある？",
 
