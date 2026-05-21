@@ -1,25 +1,16 @@
 :root{
-
   --bg:#05070b;
   --text:#ffffff;
   --card:#0f131a;
   --border:rgba(255,255,255,0.08);
-
 }
 
 /* ===== LIGHT ===== */
-
 body.light{
-
   --bg:#f3f5f8;
-
-  /* 本文用文字色 */
   --text:#111827;
-
   --card:#ffffff;
-
   --border:rgba(0,0,0,0.08);
-
 }
 
 *{
@@ -27,29 +18,18 @@ body.light{
 }
 
 body{
-
   margin:0;
-
   background:var(--bg);
   color:var(--text);
-
   font-family:Arial,sans-serif;
-
-  transition:
-    background 0.3s ease,
-    color 0.3s ease;
-
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 /* ===== TOPBAR ===== */
-
 .topbar{
-
   position:fixed;
-
   top:0;
   left:0;
-
   width:100%;
   height:64px;
 
@@ -58,217 +38,131 @@ body{
   justify-content:space-between;
 
   padding:0 20px;
-
   z-index:9999;
 
   backdrop-filter:blur(12px);
-
   background:rgba(5,7,11,0.72);
-
-  border-bottom:
-    1px solid var(--border);
-
+  border-bottom:1px solid var(--border);
 }
 
-/* ===== LIGHT MODE TOPBAR ===== */
-
+/* light topbar */
 body.light .topbar{
-
-  background:rgba(15,15,20,0.82);
-
-}
-
-/* 上部UI文字を白 */
-
-body.light .topbar a,
-body.light .logo{
-
-  color:white;
-
+  background:rgba(255,255,255,0.85);
 }
 
 /* ===== LEFT ===== */
-
 .topbar-left{
-
   display:flex;
   align-items:center;
-
   gap:24px;
-
 }
 
 /* ===== LOGO ===== */
-
 .logo{
-
   font-size:20px;
-  font-weight:bold;
-
+  font-weight:600;
   letter-spacing:2px;
 
+  color:var(--text);
+  text-decoration:none;
+
+  transition:opacity 0.2s ease;
+}
+
+.logo:hover{
+  opacity:0.7;
 }
 
 /* ===== NAV ===== */
-
 .nav-links{
-
   display:flex;
-
   gap:18px;
-
 }
 
 .nav-links a{
-
   color:var(--text);
-
   text-decoration:none;
-
   font-size:14px;
-
-  transition:
-    opacity 0.2s ease;
 
   display:flex;
   align-items:center;
-
   gap:6px;
 
+  transition:opacity 0.2s ease;
 }
 
 .nav-links a:hover{
-
   opacity:0.7;
-
 }
 
-/* ===== LUCIDE ICON ===== */
-
+/* ===== ICON ===== */
 .nav-links svg{
-
   width:18px;
   height:18px;
-
   stroke-width:2.2;
-
 }
 
 /* ===== RIGHT ===== */
-
 .topbar-right{
-
   display:flex;
   align-items:center;
-
   gap:10px;
-
-}
-
-/* ===== SEARCH ===== */
-
-#search-bar{
-
-  width:180px;
-  height:36px;
-
-  padding:0 14px;
-
-  border-radius:999px;
-
-  border:1px solid var(--border);
-
-  background:var(--card);
-
-  color:var(--text);
-
-  outline:none;
-
-  transition:
-    width 0.25s ease,
-    box-shadow 0.25s ease;
-
-}
-
-#search-bar:focus{
-
-  width:240px;
-
-  box-shadow:
-    0 0 14px rgba(120,180,255,0.25);
-
-}
-
-/* placeholder */
-
-#search-bar::placeholder{
-
-  color:rgba(255,255,255,0.4);
-
-}
-
-body.light #search-bar::placeholder{
-
-  color:rgba(255,255,255,0.6);
-
-}
-
-/* ===== LIGHT SEARCH ===== */
-
-body.light #search-bar{
-
-  color:white;
-
-  background:rgba(255,255,255,0.08);
-
 }
 
 /* ===== THEME BUTTON ===== */
-
 #theme-toggle{
-
   width:36px;
   height:36px;
 
   border:none;
   border-radius:50%;
-
   cursor:pointer;
 
   font-size:16px;
 
   background:var(--card);
   color:var(--text);
-
   border:1px solid var(--border);
 
-  transition:
-    transform 0.2s ease;
-
+  transition:transform 0.2s ease;
 }
 
 #theme-toggle:hover{
-
   transform:scale(1.08);
-
 }
 
-/* ===== LIGHT THEME BUTTON ===== */
+/* ===== SEARCH ===== */
+#search-bar{
+  width:180px;
+  height:36px;
 
-body.light #theme-toggle{
+  padding:0 14px;
+  border-radius:999px;
 
-  color:white;
+  border:1px solid var(--border);
+  background:var(--card);
+  color:var(--text);
 
-  background:rgba(255,255,255,0.08);
+  outline:none;
 
+  transition: width 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* ===== PAGE CONTENT ===== */
+#search-bar:focus{
+  width:240px;
+  box-shadow:0 0 14px rgba(120,180,255,0.25);
+}
 
-.page-content{
+/* placeholder */
+#search-bar::placeholder{
+  color:rgba(255,255,255,0.4);
+}
 
-  padding-top:90px;
-  padding-left:24px;
-  padding-right:24px;
+body.light #search-bar::placeholder{
+  color:rgba(0,0,0,0.4);
+}
 
+body.light #search-bar{
+  background:#ffffff;
+  color:#111827;
 }
