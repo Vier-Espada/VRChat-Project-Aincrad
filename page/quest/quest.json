@@ -88,5 +88,35 @@
     "exp": 200,
     "guildExp": 0,
     "timeLimit": "無制限"
+  },
+  {
+    "name": "Collect The 3 Herbs",
+    "page": "questlist/Collect The 3 Herbs.html",
+    "tags": {
+      "エリア": ["1階層"],
+      "受注場所": ["Cliffside Plaza"],
+      "推奨レベル": ["1Lv"],
+      "種類": ["収集"]
+    },
+    "image": "../../assets/quest/Collect The 3 Herbs.png",
+    "col": 420,
+    "exp": 750,
+    "guildExp": 10,
+    "timeLimit": "無制限"
+  },
+  {
+    "name": "Boar Huntin' Time",
+    "page": "questlist/Boar Huntin' Time.html",
+    "tags": {
+      "エリア": ["1階層"],
+      "受注場所": ["Cliffside Plaza"],
+      "推奨レベル": ["1Lv"],
+      "種類": ["収集"]
+    },
+    "image": "../../assets/quest/Boar Huntin' Time.png",
+    "col": 200,
+    "exp": 75,
+    "guildExp": 0,
+    "timeLimit": "無制限"
   }
 ]
