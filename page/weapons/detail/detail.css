@@ -69,7 +69,7 @@
 }
 
 /* =========================
-   TABS
+   TABS（改善版）
 ========================= */
 
 .tabs{
@@ -88,11 +88,32 @@
 
   background:var(--tag);
   color:var(--text);
+
+  opacity:0.55;
+
+  transition:0.2s ease;
 }
 
+/* hover */
+.tab:hover{
+  opacity:0.8;
+}
+
+/* 選択中（最重要） */
 .tab.active{
   background:var(--tagActive);
   color:var(--tagActiveText);
+
+  opacity:1;
+
+  transform:translateY(-2px);
+
+  box-shadow:0 6px 14px rgba(0,0,0,0.25);
+}
+
+/* クリック時の軽い押し込み感 */
+.tab:active{
+  transform:translateY(0px) scale(0.98);
 }
 
 /* =========================
