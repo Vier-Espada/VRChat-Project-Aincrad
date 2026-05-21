@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #111;
+  color: white;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+}
+
+.weapon-name {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.weapon-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.weapon-image img {
+  max-width: 250px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background: #333;
+  color: white;
+  border-radius: 8px;
+}
+
+.tab.active {
+  background: #00aaff;
+}
+
+.tab-content {
+  display: none;
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* テーブル */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+th {
+  text-align: left;
+  color: #aaa;
+}
+
+/* 入手方法 */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 8px 0;
+  border-bottom: 1px solid #333;
+}
