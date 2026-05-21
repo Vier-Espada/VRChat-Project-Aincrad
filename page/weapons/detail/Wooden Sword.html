@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Wooden Sword</title>
+  <link rel="stylesheet" href="detail.css">
+</head>
+<body>
 
+<div class="container">
+
+  <!-- 武器名 -->
+  <h1 class="weapon-name">Wooden Sword</h1>
+
+  <!-- 武器画像 -->
+  <div class="weapon-image">
+    <img src="WoodenSword.png" alt="Wooden Sword">
+  </div>
+
+  <!-- タブ -->
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('info')">基本情報</button>
+    <button class="tab" onclick="showTab('howto')">入手方法</button>
+  </div>
+
+  <!-- 基本情報 -->
+  <div id="info" class="tab-content active">
+    <table>
+      <tr><th>武器名</th><td>Wooden Sword</td></tr>
+      <tr><th>必要なレベル</th><td>1</td></tr>
+      <tr><th>攻撃力</th><td>5</td></tr>
+      <tr><th>買値</th><td>100</td></tr>
+      <tr><th>売値</th><td>50</td></tr>
+      <tr><th>攻撃方法</th><td>近接</td></tr>
+      <tr><th>武器の種類</th><td>剣</td></tr>
+      <tr><th>長さ</th><td>80cm</td></tr>
+      <tr><th>重さ</th><td>1.2kg</td></tr>
+      <tr><th>Strength</th><td>+1</td></tr>
+      <tr><th>Agility</th><td>+0</td></tr>
+      <tr><th>耐久値</th><td>30</td></tr>
+      <tr><th>トレード</th><td>可能</td></tr>
+      <tr><th>スキン</th><td>なし</td></tr>
+    </table>
+  </div>
+
+  <!-- 入手方法 -->
+  <div id="howto" class="tab-content">
+    <ul>
+      <li>ショップ</li>
+      <li>クエスト</li>
+      <li>宝箱</li>
+      <li>モンスタードロップ</li>
+      <li>その他</li>
+    </ul>
+  </div>
+
+</div>
+
+<script src="detail.js"></script>
+</body>
+</html>
