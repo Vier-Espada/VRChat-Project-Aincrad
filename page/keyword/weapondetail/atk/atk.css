@@ -69,3 +69,13 @@ body.light .note{
   background:rgba(0,0,0,.04);
   color:#111;
 }
+a,
+a:visited{
+  color:#55ff88;
+  text-decoration:none;
+}
+
+a:hover,
+a:active{
+  color:#77ffaa;
+}
