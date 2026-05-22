@@ -79,3 +79,13 @@ a:hover,
 a:active{
   color:#77ffaa;
 }
+.keyword-box a,
+.keyword-box a:visited{
+  color:#55ff88;
+  text-decoration:none;
+}
+
+.keyword-box a:hover,
+.keyword-box a:active{
+  color:#77ffaa;
+}
