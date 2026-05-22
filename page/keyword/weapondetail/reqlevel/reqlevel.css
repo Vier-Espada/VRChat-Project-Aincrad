@@ -1,0 +1,49 @@
+.page-content{
+  max-width:1000px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+.keyword-box{
+  background:rgba(20,20,30,.9);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:18px;
+  padding:35px;
+  position:relative;
+  backdrop-filter:blur(10px);
+}
+
+.back-btn{
+  position:absolute;
+  top:20px;
+  right:20px;
+  background:rgba(255,255,255,.08);
+  border:none;
+  padding:10px 16px;
+  border-radius:10px;
+  cursor:pointer;
+  color:#fff;
+  transition:.2s;
+}
+
+.back-btn:hover{
+  background:rgba(255,255,255,.15);
+}
+
+h1{
+  font-size:2rem;
+  margin-bottom:20px;
+}
+
+.desc{
+  line-height:1.9;
+  font-size:1.05rem;
+}
+
+.note{
+  margin-top:20px;
+  padding:15px;
+  border-left:4px solid #888;
+  background:rgba(255,255,255,.04);
+  border-radius:10px;
+}
