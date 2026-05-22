@@ -1,3 +1,9 @@
+html,
+body{
+  background:#111 !important;
+  color:white !important;
+}
+
 .page-content{
   max-width:1000px;
   margin:auto;
@@ -5,68 +11,41 @@
 }
 
 .keyword-box{
-  background:rgba(20,20,30,.92);
-  border:1px solid rgba(255,255,255,.08);
+  background:rgba(20,20,30,.92) !important;
+  color:white !important;
+  border:1px solid rgba(255,255,255,.08) !important;
   border-radius:18px;
   padding:35px;
   position:relative;
-  backdrop-filter:blur(10px);
-  color:white;
 }
 
 .back-btn{
   position:absolute;
   top:20px;
   right:20px;
-  background:rgba(255,255,255,.08);
+  background:rgba(255,255,255,.08) !important;
+  color:white !important;
   border:none;
   padding:10px 16px;
   border-radius:10px;
-  cursor:pointer;
-  color:white;
-  transition:.2s;
-}
-
-.back-btn:hover{
-  background:rgba(255,255,255,.15);
-}
-
-h1{
-  font-size:2rem;
-  margin-bottom:20px;
-}
-
-.desc{
-  line-height:1.9;
-  font-size:1.05rem;
 }
 
 .note{
-  margin-top:20px;
-  padding:15px;
-  border-left:4px solid #888;
-  background:rgba(255,255,255,.04);
-  border-radius:10px;
+  background:rgba(255,255,255,.04) !important;
 }
 
-/* ライトモード */
 @media (prefers-color-scheme: light){
 
+  html,
   body{
     background:#f5f5f5 !important;
     color:#111 !important;
   }
 
   .keyword-box{
-    background:#ffffff !important;
+    background:#fff !important;
     color:#111 !important;
     border:1px solid rgba(0,0,0,.08) !important;
-  }
-
-  h1,
-  .desc,
-  .note{
-    color:#111 !important;
   }
 
   .back-btn{
@@ -74,13 +53,8 @@ h1{
     color:#111 !important;
   }
 
-  .back-btn:hover{
-    background:rgba(0,0,0,.12) !important;
-  }
-
   .note{
     background:rgba(0,0,0,.04) !important;
-    border-left:4px solid #888 !important;
+    color:#111 !important;
   }
-
 }
