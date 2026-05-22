@@ -206,7 +206,7 @@ th {
 .info-link {
   display: inline-flex;
   align-items: center;
-  color: #8aa8ff;
+  color: #888;
   text-decoration: none;
   transition: .2s;
 }
