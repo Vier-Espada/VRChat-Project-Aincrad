@@ -89,3 +89,10 @@ a:active{
 .keyword-box a:active{
   color:#77ffaa;
 }
+.keyword-box a:link,
+.keyword-box a:visited,
+.keyword-box a:hover,
+.keyword-box a:active{
+  color:#55ff88 !important;
+  text-decoration:none !important;
+}
