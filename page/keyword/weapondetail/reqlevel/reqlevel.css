@@ -5,12 +5,13 @@
 }
 
 .keyword-box{
-  background:rgba(20,20,30,.9);
+  background:rgba(20,20,30,.92);
   border:1px solid rgba(255,255,255,.08);
   border-radius:18px;
   padding:35px;
   position:relative;
   backdrop-filter:blur(10px);
+  color:white;
 }
 
 .back-btn{
@@ -22,7 +23,7 @@
   padding:10px 16px;
   border-radius:10px;
   cursor:pointer;
-  color:#fff;
+  color:white;
   transition:.2s;
 }
 
@@ -47,27 +48,27 @@ h1{
   background:rgba(255,255,255,.04);
   border-radius:10px;
 }
+
+/* ライトモード */
 @media (prefers-color-scheme: light){
 
   .keyword-box{
-    background: #ffffff;
-    border: 1px solid rgba(0,0,0,.08);
-    color: #111;
+    background:#fff !important;
+    color:#111 !important;
+    border:1px solid rgba(0,0,0,.08) !important;
   }
 
   .back-btn{
-    background: rgba(0,0,0,.06);
-    color: #111;
+    background:rgba(0,0,0,.06) !important;
+    color:#111 !important;
   }
 
   .back-btn:hover{
-    background: rgba(0,0,0,.12);
+    background:rgba(0,0,0,.12) !important;
   }
 
   .note{
-    background: rgba(0,0,0,.04);
-    color: #222;
-    border-left: 4px solid #888;
+    background:rgba(0,0,0,.04) !important;
+    color:#222 !important;
   }
-
 }
