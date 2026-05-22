@@ -69,3 +69,10 @@ body.light .note{
   background:rgba(0,0,0,.04);
   color:#111;
 }
+.atk-video{
+  width:100%;
+  max-width:700px;
+  margin-top:10px;
+  border-radius:14px;
+  display:block;
+}
