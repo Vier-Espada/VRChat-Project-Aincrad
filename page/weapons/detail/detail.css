@@ -196,3 +196,27 @@ li{
     max-width:180px;
   }
 }
+
+th {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.info-link {
+  display: inline-flex;
+  align-items: center;
+  color: #8aa8ff;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.info-link:hover {
+  color: white;
+  transform: scale(1.15);
+}
+
+.info-link svg {
+  width: 14px;
+  height: 14px;
+}
