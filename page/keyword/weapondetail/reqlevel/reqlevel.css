@@ -47,3 +47,27 @@ h1{
   background:rgba(255,255,255,.04);
   border-radius:10px;
 }
+@media (prefers-color-scheme: light){
+
+  .keyword-box{
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,.08);
+    color: #111;
+  }
+
+  .back-btn{
+    background: rgba(0,0,0,.06);
+    color: #111;
+  }
+
+  .back-btn:hover{
+    background: rgba(0,0,0,.12);
+  }
+
+  .note{
+    background: rgba(0,0,0,.04);
+    color: #222;
+    border-left: 4px solid #888;
+  }
+
+}
