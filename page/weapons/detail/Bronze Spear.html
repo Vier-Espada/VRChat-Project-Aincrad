@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Bronze Spear</title>
+
+<link rel="stylesheet" href="/VRChat-Project-Aincrad/assets/ui/layout.css">
+<link rel="stylesheet" href="/VRChat-Project-Aincrad/page/weapons/detail/detail.css">
+
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+<div class="page-content">
+
+  <section class="weapon-detail">
+
+   
+    <button class="back-btn" onclick="history.back()">
+      ← 戻る
+    </button>
+
+    <div class="weapon-grid">
+
+  
+      <div class="weapon-left">
+
+        <h1 class="weapon-name">Bronze Spear</h1>
+
+        <div class="weapon-image">
+          <img src="../weaponpng/Bronze Spear.png"
+               alt="Bronze Spear">
+        </div>
+
+      </div>
+
+  
+      <div class="weapon-right">
+
+       
+        <div class="tabs">
+          <button class="tab active" onclick="showTab('info', this)">
+            基本情報
+          </button>
+
+          <button class="tab" onclick="showTab('howto', this)">
+            入手方法
+          </button>
+        </div>
+
+      
+        <div id="info" class="tab-content active">
+          <table>
+            <tr><th>武器名</th><td>Bronze Spear</td></tr>
+            <tr>
+  <th>
+    必要なレベル
+    <a href="/VRChat-Project-Aincrad/page/keyword/weapondetail/reqlevel/reqlevel.html" class="info-link">
+      <i data-lucide="info"></i>
+    </a>
+  </th>
+  <td>1 Lv</td>
+</tr>
+            <tr><th>攻撃力<a href="/VRChat-Project-Aincrad/page/keyword/weapondetail/atk/atk.html" class="info-link">
+      <i data-lucide="info"></i>
+    </a></th><td>13-21</td></tr>
+            <tr><th>買値</th><td>420 Col</td></tr>
+            <tr><th>売値</th><td>210 Col</td></tr>
+            <tr><th>攻撃方法<a href="/VRChat-Project-Aincrad/page/keyword/weapondetail/atkmethot/atkmethot.html" class="info-link">
+      <i data-lucide="info"></i>
+    </a></th><td>Pierce</td></tr>
+            <tr><th>武器の種類</th><td>Two Handed / Spear</td></tr>
+            <tr><th>長さ</th><td>長い - 1.61m</td></tr>
+            <tr><th>重さ</th><td>5</td></tr>
+            <tr><th>Strength</th><td>0</td></tr>
+            <tr><th>Agility</th><td>0</td></tr>
+            <tr><th>耐久値</th><td>なし</td></tr>
+            <tr><th>トレード</th><td>可能</td></tr>
+            <tr><th>スキン</th><td>Normal</td></tr>
+          </table>
+        </div>
+
+
+        <div id="howto" class="tab-content">
+          <ul>
+            <li>ショップ<br>Link</li>
+            
+            <li>クエスト<br>なし</li>
+            
+            <li>宝箱<br>Link</li>
+            
+            <li>モンスタードロップ<br>なし</li>
+          
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</div>
+
+
+<script src="/VRChat-Project-Aincrad/assets/ui/layout.js"></script>
+<script src="/VRChat-Project-Aincrad/page/weapons/detail/detail.js"></script>
+
+<script>
+lucide.createIcons();
+</script>
+
+</body>
+</html>
