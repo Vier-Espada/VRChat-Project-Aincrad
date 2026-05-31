@@ -123,5 +123,19 @@
       "floor":"1階層"
     },
     "link":"./detail/Ink Nepenthes.html"
+  },
+
+  {
+    "name":"Creature",
+    "image":"./monsterpng/Creature.png",
+    "col":50,
+    "exp":75,
+    "drops":["Potion"],
+    "tags":{
+      "difficulty":"5Lv",
+      "type":"Boar",
+      "floor":"1階層"
+    },
+    "link":"./detail/Creature.html"
   }
 ]
