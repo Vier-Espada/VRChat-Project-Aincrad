@@ -65,7 +65,9 @@
   {
     "question":"Desktopのおすすめの武器は？",
 
-    "answer":"Spear(槍)系統の武器です。 <a class=\"help-link\" href=\"../weapons/weapons.html\">武器一覧</a> でタグのSpearを選んで武器を確認してください。"
+    "answer":"Spear(槍)系統の武器です。 <a class=\"help-link\" href=\"../weapons/weapons.html\">武器一覧</a> でタグのSpearを選んで武器を確認してください。",
+
+    "image":"images/help1.png"
   },
 
 
